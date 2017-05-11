@@ -28,3 +28,9 @@ Build the optimized / deployable app with `npm run build`.
 Preview the deployable build with `npm run preview`.
 
 Code style is ES2016+ with React. If you're not used to it, no worries, you'll pick it up fast. Ask me if you have any questions. :)
+
+### Publishing the app
+
+First, install `gh-pages` globally: `npm install -g gh-pages`.
+
+Then run `npm run deploy`. That's it!
