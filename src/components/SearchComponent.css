@@ -1,0 +1,73 @@
+/**
+ * Component container
+ * .card copied from SubjectCard .subjectCard
+ */
+.searchComponent {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 1.5em;
+    padding: 0 0.5em;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    /*flex-direction: column;*/
+    /*margin: 1em 0.66em;*/
+    /*padding: 0 0.66em;*/
+    position: relative;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.svgContainer {
+    position: relative;
+    overflow: hidden;
+    height: 24px;
+    width: 24px;
+    /*padding: 8px;*/
+}
+
+/**
+ * Spyglass Glyph
+ */
+.icon {
+    /*font-size: 0.5em;*/
+    display: inline-flex;
+    stroke-width: 0;
+    /*stroke: #313131;*/
+    fill: #6e6e6e;
+}
+
+.searchInput {
+    font-size: 1.2rem;
+    border: none;
+    height: 24px;
+    padding: 4px;
+}
+
+input.searchInput {
+    flex-grow: 1; /*Expand to full width of container*/
+    margin-left: 0.5em;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */

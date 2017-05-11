@@ -1,0 +1,39 @@
+.cardsTable {
+    border: 1px solid #223ec7;
+    border: 1px solid #c1c1ac;
+}
+
+.tableHeader {
+    color: white;
+    background-color: #223ec7;
+    background-size: cover;
+    /*filter: brightness(50%);*/
+}
+
+.backgroundPhoto {
+    padding: 8em 0 1em 0;
+    background: url("../media/bw_background.png") no-repeat fixed center center;
+    border-bottom: solid 0.25em #223ec7;
+}
+
+.cardTitleContainer {
+    color: #223ec7;
+    border-bottom: solid 2px #223ec7;
+}
+
+.tags {
+    color: #196aff;
+}
+
+.highlighted {
+    background-color: #fbff98;
+}
+
+.searchInput {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: #0f1352;
+}
+
+.citationColumn {
+    border-right: 2px dashed #223ec7;
+}

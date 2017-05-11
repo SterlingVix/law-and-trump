@@ -1,0 +1,74 @@
+.cardTitleContainer {
+    /*color: #1071c7;*/
+    /*border-bottom: solid 2px #1071c7;*/
+}
+
+.subjectCard {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /*box-shadow: 0 -1px 3px rgba(0,0,0,0.25), -1px -1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.24);*/
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0.66em;
+    padding: 0.66em;
+    position: relative;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.subjectCard:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+/*Title*/
+.cardTitleContainer {
+    line-height: 0;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.cardTitle {}
+
+.tags {
+    font-size: 0.85em;
+    line-height: 0;
+    margin-top: 1.5em;
+    padding-left: 0.66em;
+    font-weight: 400;
+}
+
+/*Lists*/
+.listsContainer {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    margin: 0;
+
+    /* TODO: Use flex layout from http://cssdeck.com/labs/css3-flexbox-flexible-box-layouts-flex-website*/
+    flex-basis: 50%;
+}
+
+.listsContainer * {
+    margin: 0;
+}
+.listsContainer p {
+    margin-bottom: 1em;
+}
+
+.citationColumn,
+.lawColumn {
+    flex-grow: 1;
+    width: 50%;
+    min-width: 175px;
+}
+
+
+.citationColumn {
+    /*border-right: 2px dashed #1071c7;*/
+    padding-right: 1em;
+}
+
+.lawColumn {
+    padding-left: 1em;
+}

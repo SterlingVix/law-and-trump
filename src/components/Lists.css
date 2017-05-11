@@ -1,0 +1,30 @@
+.list {
+    /*padding: 0.1em;*/
+}
+
+
+/**
+ * Citation-only properties
+ */
+.citation,
+.law {}
+
+.title {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.description {}
+
+.quote,
+.reference {
+    font-style: italic;
+}
+
+
+/**
+ * Law-only properties
+ */
+.law {}
+
+.reference {}

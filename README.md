@@ -1,9 +1,7 @@
 # law-and-trump
 React app to render GJC table
 
-Demo at:
-
-https://sterlingvix.github.io/law-and-trump/
+Demo at: https://sterlingvix.github.io/law-and-trump/
 
 # Contributing
 

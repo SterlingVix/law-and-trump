@@ -1,0 +1,105 @@
+html {
+    font-size: 16px; /*for explicit rem sizing*/
+}
+
+.cardsTable {
+    /*border: 1px solid #1071c7;*/
+    /*font-family: Helvetica, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+    max-height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.cardsTable * {
+    font-family: 'Roboto', sans-serif;
+}
+
+/**
+ * Static blue header fixed to top of container
+ */
+.tableHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    text-transform: uppercase;
+    padding: 0.25em 0;
+    margin: 0;
+    font-size: 1.5em;
+    /*font-size: 1.25vw;*/
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.textShadow {
+    text-shadow: 1px 1px 0 #2c2c2c;
+}
+
+/**
+ * Sub-components of tableHeader
+ */
+
+.searchRow,
+.tableTitleRow {
+    display: flex;
+    margin: 0.25em;
+    width: 100%;
+    flex-grow: 1;
+}
+
+/**
+ * Search Bar
+ */
+.searchRow {
+    max-width: calc(100% - 2em);
+    /*width: 100%;*/
+    flex-grow: 0;
+    width: 50%;
+}
+
+.filterInput {
+    margin: 0 1em 1em 1em;
+}
+
+/**
+ * Columns
+ */
+.tableTitleRow {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.leftColumn,
+.rightColumn {
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/**
+ * Left column only
+ */
+.leftColumn {
+    /*border-right: 1px dotted white;*/
+    /*padding-right: 1em;*/
+}
+
+.tableTitleLeft {}
+
+/**
+ * Right column only
+ */
+.rightColumn {}
+
+.tableTitleRight {}
+
