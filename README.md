@@ -25,7 +25,9 @@ Run the app with `npm start`.
 
 Build the optimized / deployable app with `npm run build`.
 
-Preview the deployable build with `npm run preview`.
+Preview the deployable build by first installing `serve` globally: `npm install -g serve@^5.1.5`.
+
+Then serve the built app with `npm run preview`.
 
 Code style is ES2016+ with React. If you're not used to it, no worries, you'll pick it up fast. Ask me if you have any questions. :)
 
