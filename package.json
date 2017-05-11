@@ -1,6 +1,7 @@
 {
   "author": "Aaron Melocik, Global Justice Center",
   "description": "Material Design-themed React app of violations of law by Trump.",
+  "homepage": "http://SterlingVix.github.io/law-and-trump",
   "keywords": ["react", "table", "material design", "law", "trump", "global justice center"],
   "license" : "TBD",
   "main": "src/index.js",
@@ -17,14 +18,19 @@
     "remarkable": "^1.7.1"
   },
   "devDependencies": {
+    "gh-pages": "latest",
     "react-scripts": "0.9.5",
     "serve": "^5.1.5"
   },
 
   "scripts": {
     "start": "react-scripts start",
+
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "preview": "serve -s build",
+
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
