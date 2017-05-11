@@ -22,20 +22,26 @@
 
 /*Title*/
 .cardTitleContainer {
-    line-height: 0;
+    /*line-height: 0;*/
     margin-bottom: 1em;
     font-size: 1.25em;
     font-weight: 600;
 }
 
-.cardTitle {}
+.cardTitle * {
+    margin: 0;
+    padding: 0;
+}
 
 .tags {
     font-size: 0.85em;
-    line-height: 0;
-    margin-top: 1.5em;
+    /*line-height: 0;*/
+    /*margin-top: 1.5em;*/
     padding-left: 0.66em;
     font-weight: 400;
+}
+.tags * {
+    margin: 0.15em 0;
 }
 
 /*Lists*/

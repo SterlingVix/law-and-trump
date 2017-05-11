@@ -161,7 +161,7 @@ Trump: “Yeah, there has to be some form.”`,
     },
     {
       subject: `### Shooting Russian Aircraft`,
-      tags: ['Russia', 'test'],
+      tags: ['Russia'],
       citationList: [
         {
           citationTitle: `#### [Interview](http://www.ibtimes.co.uk/trump-says-us-has-gotta-shoot-russian-planes-performing-barrel-rolls-if-democracy-fails-1558024) on Fort Wayne's Morning News, May 2016`,

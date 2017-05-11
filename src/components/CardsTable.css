@@ -1,11 +1,6 @@
-html {
-    font-size: 16px; /*for explicit rem sizing*/
-}
-
 .cardsTable {
     /*border: 1px solid #1071c7;*/
     /*font-family: Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
     max-width: 1024px;
     max-height: 100vh;
     overflow-y: hidden;
@@ -13,10 +8,6 @@ html {
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
-}
-
-.cardsTable * {
-    font-family: 'Roboto', sans-serif;
 }
 
 /**
