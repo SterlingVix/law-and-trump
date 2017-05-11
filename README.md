@@ -1,5 +1,5 @@
 # law-and-trump
-React app to render GJC table
+Material Design-themed React app of violations of law by Trump.
 
 Demo at: https://sterlingvix.github.io/law-and-trump/
 
