@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     height: auto;
     text-transform: uppercase;
-    padding: 0.25em 0;
+    padding: 0.45em 0;
     margin: 0;
     font-size: 1.5em;
     /*font-size: 1.25vw;*/
@@ -46,7 +46,7 @@
  * Search Bar
  */
 .searchRow {
-    margin: 0.25em 0;
+    margin: 0.45em 0;
     flex-grow: 0;
     width: 100%;
     max-width: calc(66% + 2em);
@@ -64,7 +64,7 @@
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-around;
-    font-size: 1.4rem;
+    font-size: 0.9em;
 }
 
 .leftColumn,
@@ -103,18 +103,32 @@
 
 /*!* 699px width or smaller *!*/
 @media all and (max-width: 699px) {
-    .tableTitleRow {
-        font-size: 1.1rem;
+    .searchRow {
+        max-width: 100%;
+        margin: 0.2em 2em;
     }
 }
 
 /* 568px width or larger AND 699px or smaller */
-@media all and (min-width: 568px) and (max-width: 699px) {}
+@media all and (min-width: 568px) and (max-width: 699px) {
+    .cardsTable {
+        font-size: 0.85em;
+    }
+    .tableTitleRow {
+        font-size: 0.8em;
+    }
+}
 
 /*!* 567px width or smaller *!*/
 @media all and (max-width: 567px) {
+    .cardsTable {
+        font-size: 0.8em;
+    }
+    .tableTitleRow {
+        font-size: 100%;
+    }
     .searchRow {
-        width: 421px;
+        margin: 0.2em 1em;
     }
     .rightColumn {
         display: none;

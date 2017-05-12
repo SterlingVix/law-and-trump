@@ -60,3 +60,29 @@ input.searchInput {
 input.searchInput:focus {
     outline: none;
 }
+
+/* 568px width or larger AND 699px or smaller */
+@media all and (min-width: 568px) and (max-width: 699px) {
+    .searchComponent {
+        height: 1.4em;
+    }
+    .svgContainer {
+        height: 20px;
+        width: 20px;
+        min-height: 20px;
+        min-width: 20px;
+        max-height: 20px;
+        max-width: 20px;
+    }
+    input.searchInput {
+        height: 20px;
+        padding: 4px;
+    }
+}
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    /*.searchComponent {*/
+        /*height: 1.2em;*/
+    /*}*/
+}
