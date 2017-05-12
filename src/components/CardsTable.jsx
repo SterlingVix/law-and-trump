@@ -33,6 +33,7 @@ class CardsTable extends Component {
     return (
       <div className="cardsTable">
         <div className={`tableHeader textShadow ${this.state.showPhoto ? 'backgroundPhoto' : ''}`}>
+          {/* TODO: add "Updated MM DD" here. */}
 
           <div className="searchRow">
             <SearchComponent className="filterInput" filterCardsCallback={this.updateFilter}/>
