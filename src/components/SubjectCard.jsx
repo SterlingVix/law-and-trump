@@ -5,48 +5,33 @@ import React, { PropTypes } from 'react';
 import './SubjectCard.css';
 
 class SubjectCard extends React.Component {
-  returnText = string => string;
-
   render() {
     const {
-      citationFlag, handleText, lawFlag, subjectCard, subjectFlag, showTags, tagFlag, tags,
+      handleCitationText, handleLawText, handleSubjectText, handleTagText, showTags, card, tags,
     } = this.props;
+
+    const opts = { options: { html: true, breaks: true } };
 
     return (
       <div className="subjectCard">
 
-        <div className="cardTitleContainer">
-          <div className="cardTitle">
-            <Markdown
-              options={{ html: true, breaks: true, }}
-              source={subjectFlag ? handleText(subjectCard.subject) : subjectCard.subject}
-            />
+        <div className="cardHeaderContainer">
+          <div className="cardTitleContainer">
+            <Markdown {...opts} source={handleSubjectText(card.subject)}/>
           </div>
 
           {showTags ?
-            (<div className="tags">
-              <Markdown options={{ html: true, breaks: true, }} source={tagFlag ? handleText(tags) : tags} />
-            </div>) :
+            (<div className="tags"><Markdown {...opts} source={handleTagText(tags)}/></div>) :
             null}
         </div>
 
         <div className="listsContainer">
           <div className="citationColumn">
-            <CitationList
-              // filterText={filterText}
-              handleText={citationFlag ? handleText : this.returnText}
-              // citationFlag={citationFlag}
-              citationList={subjectCard.citationList}
-            />
+            <CitationList opts={opts} handleText={handleCitationText} citationList={card.citationList}/>
           </div>
 
           <div className="lawColumn">
-            <LawList
-              // filterText={filterText}
-              handleText={lawFlag ? handleText : this.returnText}
-              // lawFlag={lawFlag}
-              lawList={subjectCard.lawList}
-            />
+            <LawList opts={opts} handleText={handleLawText} lawList={card.lawList}/>
           </div>
         </div>
 
@@ -56,21 +41,16 @@ class SubjectCard extends React.Component {
 }
 
 SubjectCard.defaultProps = {
-  citationFlag: false,
-  lawFlag: false,
-  subjectFlag: false,
-  tagFlag: false,
   tags: '',
 };
 
 SubjectCard.propTypes = {
-  citationFlag: PropTypes.bool,
-  handleText: PropTypes.func.isRequired,
-  lawFlag: PropTypes.bool,
+  card: React.PropTypes.object,
+  handleCitationText: PropTypes.func.isRequired,
+  handleLawText: PropTypes.func.isRequired,
+  handleSubjectText: PropTypes.func.isRequired,
+  handleTagText: PropTypes.func.isRequired,
   showTags: PropTypes.bool.isRequired,
-  subjectCard: React.PropTypes.object,
-  subjectFlag: PropTypes.bool,
-  tagFlag: PropTypes.bool,
   tags: PropTypes.string,
 };
 

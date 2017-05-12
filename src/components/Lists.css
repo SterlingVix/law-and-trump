@@ -1,30 +1,52 @@
+.list * {
+    margin: 0;
+    line-height: 1.2;
+}
 .list {
-    /*padding: 0.1em;*/
+    width: 100%;
+    text-wrap: normal;
+    overflow-wrap: normal;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.2;
+}
+.list p {
+    margin-bottom: 1.5em;
+}
+.list h4 {
+    margin-bottom: 0.5em;
 }
 
-
-/**
- * Citation-only properties
- */
 .citation,
-.law {}
+.law {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.citation * {
+    /*margin: 0;*/
+    /*line-height: 1.2;*/
+}
+.law * {
+    /*margin: 0;*/
+    /*line-height: 1.2;*/
+}
 
 .title {
-    font-size: 1.1em;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .description {}
 
-.quote,
-.reference {
-    font-style: italic;
-}
-
+/**
+ * Citation-only properties
+ */
+.citation {}
 
 /**
  * Law-only properties
  */
 .law {}
-
-.reference {}
