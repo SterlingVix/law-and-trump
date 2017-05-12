@@ -1,9 +1,15 @@
 .cardsTable {
     max-width: 1280px;
     overflow-y: hidden;
-    display: flex;
+    display: -webkit-flex; display: flex;
     flex-direction: column;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     justify-content: space-around;
+    -webkit-align-content: space-around;
+    -moz-align-content: space-around;
+    -ms-align-content: space-around;
     align-content: space-around;
     min-width: 360px;
 }
@@ -12,15 +18,27 @@
  * Static blue header fixed to top of container
  */
 .tableHeader {
-    display: flex;
+    display: -webkit-flex; display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     height: auto;
     text-transform: uppercase;
     padding: 0.45em 0;
     margin: 0;
     font-size: 1.5em;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     justify-content: space-around;
+    -webkit-align-content: space-around;
+    -moz-align-content: space-around;
+    -ms-align-content: space-around;
     align-content: space-around;
 }
 
@@ -34,7 +52,7 @@
 
 .searchRow,
 .tableTitleRow {
-    display: flex;
+    display: -webkit-flex; display: flex;
     flex-grow: 1;
 }
 
@@ -60,6 +78,9 @@
     width: 100%;
     flex-basis: 100%;
     flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     justify-content: space-around;
     font-size: 0.9em;
 }

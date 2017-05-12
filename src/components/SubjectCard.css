@@ -3,7 +3,7 @@
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     /*box-shadow: 0 -1px 3px rgba(0,0,0,0.25), -1px -1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.24);*/
-    display: flex;
+    display: -webkit-flex; display: flex;
     flex-direction: column;
     margin: 1em 0.66em;
     padding: 0.66em;
@@ -46,7 +46,10 @@
  * Lists
  */
 .listsContainer {
-    display: flex;
+    display: -webkit-flex; display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     flex-basis: 50%;
     margin: 0;
@@ -78,6 +81,9 @@
 /*!* 567px width or smaller *!*/
 @media all and (max-width: 567px) {
     .listsContainer {
+        -webkit-flex-flow: column nowrap;
+        -moz-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
         flex-basis: 100%;
     }
