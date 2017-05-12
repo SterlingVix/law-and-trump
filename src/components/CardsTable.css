@@ -39,8 +39,6 @@
 .searchRow,
 .tableTitleRow {
     display: flex;
-    margin: 0.25em;
-    width: 100%;
     flex-grow: 1;
 }
 
@@ -48,10 +46,10 @@
  * Search Bar
  */
 .searchRow {
-    max-width: calc(100% - 2em);
-    /*width: 100%;*/
+    margin: 0.25em 0;
     flex-grow: 0;
-    width: 50%;
+    width: 100%;
+    max-width: calc(66% + 2em);
 }
 
 .filterInput {
@@ -62,11 +60,11 @@
  * Columns
  */
 .tableTitleRow {
-    display: flex;
+    margin: 0.25em;
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-around;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .leftColumn,
@@ -94,3 +92,31 @@
 
 .tableTitleRight {}
 
+/*
+ * RESPONSIVE BREAKPOINTS
+ *  * iframe collapses at 699px.
+ *    * @700: as-is
+ *    * @699: change!
+ */
+/* 700px width or larger */
+@media all and (min-width: 700px) {}
+
+/*!* 699px width or smaller *!*/
+@media all and (max-width: 699px) {
+    .tableTitleRow {
+        font-size: 1.1rem;
+    }
+}
+
+/* 568px width or larger AND 699px or smaller */
+@media all and (min-width: 568px) and (max-width: 699px) {}
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    .searchRow {
+        width: 421px;
+    }
+    .rightColumn {
+        display: none;
+    }
+}

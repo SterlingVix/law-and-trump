@@ -22,10 +22,12 @@ html, body {
 
  Breakpoints:
 
- 1024
- 768
- 480
- 320
+*** iframe collapses at 700px.
+
+@700: as-is
+@699: change!
+ *** 768
+ *** 445 -- min-width
 
 https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
 https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
