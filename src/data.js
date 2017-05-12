@@ -15,7 +15,7 @@ export default {
     /**
      * Text for column headers:
      */
-    tableTitleLeft: 'What Trump said about...',
+    tableTitleLeft: 'Trump’s words and actions',
     tableTitleRight: 'International laws violated',
   },
 
@@ -28,12 +28,11 @@ export default {
 
    {
      subject: `### `,
-     tags: ['', '', ...etc]
+     tags: [''],
      citationList: [
        {
          title: `#### `,
          description: ``,
-         quote: ``,
        },
      ],
      lawList: [
@@ -48,22 +47,107 @@ export default {
    },
    **/
   cardsList: [
+    /***********************/
+
+    /*
     {
-      subject: `### Punishing Women for Having Abortions`,
-      tags: ['Women', 'Abortion'],
+      subject: `### Reinstating and Expanding the Global Gag Rule`,
+      tags: [''],
       citationList: [
         {
-          title: `#### [Interview](https://www.youtube.com/watch?v=jGSttcyn2RI) on MSNBC, March 2016 `,
-          description: `Matthews: “Do you believe in punishment for abortion – yes or no – as a principle?”
-Trump: “The answer is there has to be some form of punishment.”
-Matthews: “For the woman?”
-Trump: “Yeah, there has to be some form.”`,
+          title: `#### `,
+          description: ``,
         },
       ],
       lawList: [
         {
-          title: `#### Convention Against Torture`,
-          description: `[Art. 1](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CAT.aspx) and [Art. 2](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CAT.aspx): Committee Against Torture has said that prohibiting abortions and/or punishing women who have abortions constitutes inhuman treatment in violation of the Convention.`,
+          title: `#### `,
+          description: ``,
+        }, {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+    },
+    {
+      subject: `### Executive Orders Targeting Muslims`,
+      tags: [''],
+      citationList: [
+        {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### `,
+          description: ``,
+        }, {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+    },
+    {
+      subject: `### Increasing Deportation Raids`,
+      tags: [''],
+      citationList: [
+        {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### `,
+          description: ``,
+        }, {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+    },
+    {
+      subject: `### Conducting a Raid in Yemen`,
+      tags: [''],
+      citationList: [
+        {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### `,
+          description: ``,
+        }, {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+    },
+
+    */
+    {
+      subject: `### Locking Up Hillary Clinton`,
+      tags: ['Hillary', 'Clinton'],
+      citationList: [
+        {
+          title: `#### [Campaign Rallies](https://www.washingtonpost.com/news/the-fix/wp/2016/11/22/a-brief-history-of-the-lock-her-up-chant-as-it-looks-like-trump-might-not-even-try/?utm_term=.c3073b19a8ab), 2016`,
+          description: `Throughout the campaign, Trump led his supporters in chants of “lock her up.”`,
+        },
+        {
+          title: `#### [Second Televised Presidential Debate](http://fortune.com/2016/10/10/presidential-debate-trump-clinton-jail/), October 2016`,
+          description: `_To Hillary Clinton:_
+“If I win, I am going to instruct my attorney general to get a special prosecutor to look into your situation because there has never been so many lies, so much deception — there has never been anything like it and we’re going to have to get a special prosecutor.”`,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### International Covenant on Civil and Political Rights`,
+          description: `[Art. 14](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Everyone with a criminal charge has the right to court and is innocent until proven guilty by law.
+[Art. 15](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Nobody should be punished for any act that was not criminal when committed.
+[Art. 17](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): “No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour and reputation” and “Everyone has the right to the protection of the law against such interference or attacks.”`,
         },
       ],
     },
@@ -92,44 +176,21 @@ Trump: “Yeah, there has to be some form.”`,
       ],
     },
     {
-      subject: `### Locking Up Hillary Clinton`,
-      tags: ['Hillary', 'Clinton'],
+      subject: `### Punishing Women for Having Abortions`,
+      tags: ['Women', 'Abortion'],
       citationList: [
         {
-          title: `#### [Campaign Rallies](https://www.washingtonpost.com/news/the-fix/wp/2016/11/22/a-brief-history-of-the-lock-her-up-chant-as-it-looks-like-trump-might-not-even-try/?utm_term=.c3073b19a8ab), 2016`,
-          description: `Throughout the campaign, Trump led his supporters in chants of “lock her up.”`,
-        },
-        {
-          title: `#### [Second Televised Presidential Debate](http://fortune.com/2016/10/10/presidential-debate-trump-clinton-jail/), October 2016`,
-          description: `_To Hillary Clinton:_
-“If I win, I am going to instruct my attorney general to get a special prosecutor to look into your situation because there has never been so many lies, so much deception — there has never been anything like it and we’re going to have to get a special prosecutor.”`,
+          title: `#### [Interview](https://www.youtube.com/watch?v=jGSttcyn2RI) on MSNBC, March 2016 `,
+          description: `Matthews: “Do you believe in punishment for abortion – yes or no – as a principle?”
+Trump: “The answer is there has to be some form of punishment.”
+Matthews: “For the woman?”
+Trump: “Yeah, there has to be some form.”`,
         },
       ],
       lawList: [
         {
-          title: `#### International Covenant on Civil and Political Rights`,
-          description: `[Art. 14](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Everyone with a criminal charge has the right to court and is innocent until proven guilty by law.
-[Art. 15](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Nobody should be punished for any act that was not criminal when committed.
-[Art. 17](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): “No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour and reputation” and “Everyone has the right to the protection of the law against such interference or attacks.”`,
-        },
-      ],
-    },
-    {
-      subject: `### Using Drones to Kill Terrorist Suspects`,
-      tags: ['Drones', 'Terrorist'],
-      citationList: [
-        {
-          title: `#### [Interview](https://www.democracynow.org/2016/12/27/what_will_happen_when_donald_trump) with the Daily Mail, May 2016`,
-          description: `“As far as drones are concerned, yes, to take out terrorists. The only thing is I want them to get it right. But to take out terrorists yes I think that is something I would continue to do.”`,
-        },
-      ],
-      lawList: [
-        {
-          title: `#### UN Charter`,
-          description: `[Art. 2](http://www.un.org/en/sections/un-charter/chapter-i/): Continued use of drone strikes violates Art. 2 on the use of force. In October, 2013, [two reports](http://www.npr.org/sections/thetwo-way/2013/10/22/239597012/u-s-drone-strikes-violate-international-law-reports-allege), one from Amnesty International and one from Human Rights Watch, found that US policy and practices for the international use of lethal force against terrorism suspects and other people who happen to be near such suspects goes far beyond what international human rights law permits.`,
-        }, {
-          title: `#### International Covenant on Civil and Political Rights`,
-          description: `[Art. 6](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CERD.aspx): These killings were found to disregard international protections for the right to life and the prohibition of the arbitrary deprivation of life. `,
+          title: `#### Convention Against Torture`,
+          description: `[Art. 1](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CAT.aspx) and [Art. 2](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CAT.aspx): Committee Against Torture has said that prohibiting abortions and/or punishing women who have abortions constitutes inhuman treatment in violation of the Convention.`,
         },
       ],
     },
@@ -150,6 +211,196 @@ Trump: “Yeah, there has to be some form.”`,
         }, {
           title: `#### International Covenant on Civil and Political Rights`,
           description: `[Art. 6](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Gives everyone the right to life and limits death sentences for only the “most serious crimes”.`,
+        },
+      ],
+    },
+    // {
+    //   subject: `### Executing American Citizens Bowe Bergdahl and Edward Snowden`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Creating a Database of Muslims and Refugees`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Surveilling and Closing Mosques`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Banning Muslims from Entering the US using “Extreme Vetting”`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Waterboarding and Torture`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Revoking US Citizenship for Burning the Flag`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Expanding Stop and Frisk`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Shooting Iranian Boats`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Inciting Violence Against Protestors`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    {
+      subject: `### Using Drones to Kill Terrorist Suspects`,
+      tags: ['Drones', 'Terrorist'],
+      citationList: [
+        {
+          title: `#### [Interview](https://www.democracynow.org/2016/12/27/what_will_happen_when_donald_trump) with the Daily Mail, May 2016`,
+          description: `“As far as drones are concerned, yes, to take out terrorists. The only thing is I want them to get it right. But to take out terrorists yes I think that is something I would continue to do.”`,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### UN Charter`,
+          description: `[Art. 2](http://www.un.org/en/sections/un-charter/chapter-i/): Continued use of drone strikes violates Art. 2 on the use of force. In October, 2013, [two reports](http://www.npr.org/sections/thetwo-way/2013/10/22/239597012/u-s-drone-strikes-violate-international-law-reports-allege), one from Amnesty International and one from Human Rights Watch, found that US policy and practices for the international use of lethal force against terrorism suspects and other people who happen to be near such suspects goes far beyond what international human rights law permits.`,
+        }, {
+          title: `#### International Covenant on Civil and Political Rights`,
+          description: `[Art. 6](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CERD.aspx): These killings were found to disregard international protections for the right to life and the prohibition of the arbitrary deprivation of life. `,
         },
       ],
     },
@@ -174,5 +425,43 @@ Trump: “Yeah, there has to be some form.”`,
         },
       ],
     },
+    // {
+    //   subject: `### Using Nuclear Weapons`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
+    // {
+    //   subject: `### Using Nuclear Weapons`,
+    //   tags: [''],
+    //   citationList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    //   lawList: [
+    //     {
+    //       title: `#### `,
+    //       description: ``,
+    //     }, {
+    //       title: `#### `,
+    //       description: ``,
+    //     },
+    //   ],
+    // },
   ],
 };
