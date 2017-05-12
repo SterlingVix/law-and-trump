@@ -1,6 +1,8 @@
 .cardsList {
-    /*font-family: Helvetica, sans-serif;*/
-    /*padding: 0 0.5em;*/
+    min-height: 85%;
+    min-height: 85vh;
+
+    height: 85%;
     height: 85vh;
     overflow-y: auto;
 }
@@ -8,8 +10,3 @@
 .highlighted {
     /*background-color: #ffe446;*/
 }
-
-/*.scrollableContainer {*/
-    /*!*overflow-y: scroll;*!*/
-
-/*}*/

@@ -1,13 +1,11 @@
 .cardsTable {
-    /*border: 1px solid #1071c7;*/
-    /*font-family: Helvetica, sans-serif;*/
-    max-width: 1024px;
-    max-height: 100vh;
+    max-width: 1280px;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
+    min-width: 360px;
 }
 
 /**
@@ -15,14 +13,12 @@
  */
 .tableHeader {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     height: auto;
     text-transform: uppercase;
     padding: 0.45em 0;
     margin: 0;
     font-size: 1.5em;
-    /*font-size: 1.25vw;*/
     align-items: center;
     justify-content: space-around;
     align-content: space-around;
@@ -62,6 +58,7 @@
 .tableTitleRow {
     margin: 0.25em;
     width: 100%;
+    flex-basis: 100%;
     flex-wrap: nowrap;
     justify-content: space-around;
     font-size: 0.9em;
@@ -71,7 +68,7 @@
 .rightColumn {
     width: 100%;
     text-align: center;
-    flex-grow: 1;
+    flex-basis: 100%;
     margin: 0;
 }
 

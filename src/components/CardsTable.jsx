@@ -32,11 +32,6 @@ class CardsTable extends Component {
   render() {
     return (
       <div className="cardsTable">
-        <style>
-          @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-        </style>
-
-
         <div className={`tableHeader textShadow ${this.state.showPhoto ? 'backgroundPhoto' : ''}`}>
 
           <div className="searchRow">
