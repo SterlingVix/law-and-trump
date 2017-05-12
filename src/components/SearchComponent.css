@@ -39,7 +39,7 @@
 }
 .icon {
     font-size: 0.5rem;
-    display: inline-flex;
+    display: flex;
     stroke-width: 0;
     fill: #6e6e6e;
 }

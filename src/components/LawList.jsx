@@ -1,43 +1,30 @@
-import React, { PropTypes, Component } from 'react';
 import Markdown from 'react-remarkable';
+import React, { PropTypes, Component } from 'react';
 import './Lists.css';
 
 class LawList extends Component {
   render() {
-    const { lawList, handleText } = this.props;
+    const { lawList, handleText, opts } = this.props;
 
     return (
       <div className="list">
         {lawList.map((law, index) => (
           <div key={index} className="law">
-            <Markdown
-              source={handleText(law.lawTitle)}
-              className="title"
-              options={{ html: true, breaks: true, }}
-              // ref={(element) => highlightText(element)}
-            />
-            <Markdown
-              source={handleText(law.lawReference)}
-              className="reference"
-              options={{ html: true, breaks: true, }}
-              // ref={(element) => highlightText(element)}
-            />
+            <Markdown source={handleText(law.title)} className="title"{...opts}/>
+            <Markdown source={handleText(law.description)} className="description"{...opts}/>
           </div>
-        ) )}
+        ))}
       </div>
     );
   }
 }
 
-LawList.defaultProps = {
-  // lawFlag: false,
-};
+LawList.defaultProps = {};
 
 LawList.propTypes = {
-  // filterText: PropTypes.string,
   handleText: PropTypes.func.isRequired,
-  // lawFlag: PropTypes.bool,
   lawList: PropTypes.array,
+  opts: PropTypes.object.isRequired,
 };
 
 export default LawList;

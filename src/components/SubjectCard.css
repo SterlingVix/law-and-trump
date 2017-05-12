@@ -1,8 +1,3 @@
-.cardTitleContainer {
-    /*color: #1071c7;*/
-    /*border-bottom: solid 2px #1071c7;*/
-}
-
 .subjectCard {
     background: #fff;
     border-radius: 2px;
@@ -14,29 +9,32 @@
     padding: 0.66em;
     position: relative;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    min-width: 300px;
 }
 
 .subjectCard:hover {
     box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
-/*Title*/
-.cardTitleContainer {
-    /*line-height: 0;*/
+/**
+ * Card Header Section
+ */
+.cardHeaderContainer {
     margin-bottom: 1em;
     font-size: 1.25em;
     font-weight: 600;
 }
+.cardHeaderContainer {
+    transition: all 0.1s ease;
+}
 
-.cardTitle * {
+.cardTitleContainer * {
     margin: 0;
     padding: 0;
 }
 
 .tags {
     font-size: 0.85em;
-    /*line-height: 0;*/
-    /*margin-top: 1.5em;*/
     padding-left: 0.66em;
     font-weight: 400;
 }
@@ -44,33 +42,23 @@
     margin: 0.15em 0;
 }
 
-/*Lists*/
+
+/**
+ * Lists
+ */
 .listsContainer {
     display: flex;
     flex-flow: row nowrap;
     margin: 0;
-
-    /* TODO: Use flex layout from http://cssdeck.com/labs/css3-flexbox-flexible-box-layouts-flex-website*/
-    flex-basis: 50%;
-}
-
-.listsContainer * {
-    margin: 0;
-}
-.listsContainer p {
-    margin-bottom: 1em;
+    width: 100%;
 }
 
 .citationColumn,
 .lawColumn {
-    flex-grow: 1;
-    width: 50%;
-    min-width: 175px;
+    width: 100%;
 }
 
-
 .citationColumn {
-    /*border-right: 2px dashed #1071c7;*/
     padding-right: 1em;
 }
 
@@ -82,10 +70,10 @@
  * RESPONSIVE BREAKPOINTS
  */
 /*!* 699px width or smaller *!*/
-@media all and (max-width: 699px) {}
+/*@media all and (max-width: 699px) {}*/
 
 /* 568px width or larger AND 699px or smaller */
-@media all and (min-width: 568px) and (max-width: 699px) {}
+/*@media all and (min-width: 568px) and (max-width: 699px) {}*/
 
 /*!* 567px width or smaller *!*/
 @media all and (max-width: 567px) {
@@ -95,9 +83,7 @@
     }
     .citationColumn,
     .lawColumn {
-        flex-grow: 1;
         width: 100%;
-        min-width: 300px;
         padding: 0;
     }
     .citationColumn {
