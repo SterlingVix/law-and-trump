@@ -1,5 +1,46 @@
-body {
+html {
+    font-size: 16px; /*for explicit rem sizing*/
+    font-family: 'Roboto', sans-serif;
+
+    /* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    box-sizing: border-box;
+}
+html * {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+}
+
+html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
+
+
+/**
+
+ Media Queries:
+
+ Breakpoints:
+
+*** iframe collapses at 700px.
+
+@700: as-is
+@699: change!
+ *** 768
+ *** 445 -- min-width
+
+https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+@media (min-width:500px) {
+  CLASSNAME {
+    PROPERTIES
+  }
+}
+
+@media (max-width:499px){
+  CLASSNAME {
+    PROPERTIES
+  }
+}
+ */

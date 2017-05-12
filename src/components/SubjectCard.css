@@ -22,27 +22,32 @@
 
 /*Title*/
 .cardTitleContainer {
-    line-height: 0;
+    /*line-height: 0;*/
     margin-bottom: 1em;
     font-size: 1.25em;
     font-weight: 600;
 }
 
-.cardTitle {}
+.cardTitle * {
+    margin: 0;
+    padding: 0;
+}
 
 .tags {
     font-size: 0.85em;
-    line-height: 0;
-    margin-top: 1.5em;
+    /*line-height: 0;*/
+    /*margin-top: 1.5em;*/
     padding-left: 0.66em;
     font-weight: 400;
+}
+.tags * {
+    margin: 0.15em 0;
 }
 
 /*Lists*/
 .listsContainer {
     display: flex;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
+    flex-flow: row nowrap;
     margin: 0;
 
     /* TODO: Use flex layout from http://cssdeck.com/labs/css3-flexbox-flexible-box-layouts-flex-website*/
@@ -71,4 +76,31 @@
 
 .lawColumn {
     padding-left: 1em;
+}
+
+/*
+ * RESPONSIVE BREAKPOINTS
+ */
+/*!* 699px width or smaller *!*/
+@media all and (max-width: 699px) {}
+
+/* 568px width or larger AND 699px or smaller */
+@media all and (min-width: 568px) and (max-width: 699px) {}
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    .listsContainer {
+        flex-flow: column nowrap;
+        flex-basis: 100%;
+    }
+    .citationColumn,
+    .lawColumn {
+        flex-grow: 1;
+        width: 100%;
+        min-width: 300px;
+        padding: 0;
+    }
+    .citationColumn {
+        margin-bottom: 1.5em;
+    }
 }

@@ -37,3 +37,27 @@
 .citationColumn {
     border-right: 2px dashed #223ec7;
 }
+
+
+/*
+ * RESPONSIVE BREAKPOINTS
+ *  * iframe collapses at 699px.
+ *    * @700: as-is
+ *    * @699: change!
+ */
+/* 700px width or larger */
+@media all and (min-width: 700px) {}
+
+/*!* 699px width or smaller *!*/
+@media all and (max-width: 699px) {}
+
+/* 568px width or larger AND 699px or smaller */
+@media all and (min-width: 568px) and (max-width: 699px) {}
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    .citationColumn {
+        border-right: none;
+        border-bottom: 1px dashed #3052c7;
+    }
+}
