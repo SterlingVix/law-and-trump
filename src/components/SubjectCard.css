@@ -9,7 +9,6 @@
     padding: 0.66em;
     position: relative;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    min-width: 300px;
 }
 
 .subjectCard:hover {
@@ -20,7 +19,7 @@
  * Card Header Section
  */
 .cardHeaderContainer {
-    margin-bottom: 1em;
+    margin-bottom: 0.66em;
     font-size: 1.25em;
     font-weight: 600;
 }
@@ -49,6 +48,7 @@
 .listsContainer {
     display: flex;
     flex-flow: row nowrap;
+    flex-basis: 50%;
     margin: 0;
     width: 100%;
 }

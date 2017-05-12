@@ -10,7 +10,12 @@ class SubjectCard extends React.Component {
       handleCitationText, handleLawText, handleSubjectText, handleTagText, showTags, card, tags,
     } = this.props;
 
-    const opts = { options: { html: true, breaks: true } };
+    // const opts = { options: { html: true, breaks: true } };
+    const opts = { options: { html: false, breaks: true, xhtmlOut: true, } };
+    // let opts = { options: { html: true, breaks: true } };
+    // opts = { options: { html: false, breaks: true } };
+    // opts = { options: { html: true, breaks: false } };
+    // opts = { options: { html: false, breaks: false } };
 
     return (
       <div className="subjectCard">

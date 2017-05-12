@@ -1,8 +1,9 @@
 .list * {
-    margin: 0;
+    /*margin: 0;*/
     line-height: 1.2;
 }
 .list {
+    margin: 0;
     width: 100%;
     text-wrap: normal;
     overflow-wrap: normal;
@@ -14,26 +15,20 @@
     margin-bottom: 1.5em;
 }
 .list h4 {
-    margin-bottom: 0.5em;
+    margin: 0.33em 0 0.1em 0;
 }
 
 .citation,
 .law {
     display: block;
     width: 100%;
+    flex-basis: 50%;
     margin: 0;
     padding: 0;
-    position: relative;
 }
 
-.citation * {
-    /*margin: 0;*/
-    /*line-height: 1.2;*/
-}
-.law * {
-    /*margin: 0;*/
-    /*line-height: 1.2;*/
-}
+.citation * {}
+.law * {}
 
 .title {
     font-weight: bold;
@@ -50,3 +45,12 @@
  * Law-only properties
  */
 .law {}
+
+
+/*!* 567px width or smaller *!*/
+@media all and (max-width: 567px) {
+    .citation,
+    .law {
+        flex-basis: 100%;
+    }
+}
