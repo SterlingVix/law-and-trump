@@ -5,7 +5,7 @@ Demo at: https://sterlingvix.github.io/law-and-trump/
 
 # Contributing
 
-Thanks!!! You probably want the reference document, here: http://globaljusticecenter.net/documents/TrumpAndInternationalLaw.pdf
+Thanks!!! You probably want the reference document, here: http://globaljusticecenter.net/documents/TrumpAndInternationalLaw_March2017.pdf
 
 ### Process
 

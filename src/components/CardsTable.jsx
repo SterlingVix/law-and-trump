@@ -23,7 +23,7 @@ class CardsTable extends Component {
     this.setState({
       filterText: event.target.value,
       filterTextRegexp: new RegExp(event.target.value, 'i'),
-      replacementRegexp: event.target.value ?
+      replacementRegexp: event.target.value.trim() ?
         new RegExp(`(]\\(.*${event.target.value}.*?[)])|(${event.target.value})`, 'gi') :
         null,
     });
