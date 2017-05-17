@@ -52,6 +52,8 @@ export default {
    **/
   cardsList: [
     /***********************/
+
+
     {
       subject: `### Reinstating and Expanding the Global Gag Rule`,
       tags: [''],
@@ -59,6 +61,7 @@ export default {
         {
           title: `#### Executive Order, January 27th 2017`,
           description: `Signed a [Presidential Memorandum](https://www.whitehouse.gov/the-press-office/2017/01/23/presidential-memorandum-regarding-mexico-city-policy) blocking federal funding for international NGOs or programs that provide information, counseling, or referrals for abortion services, provide abortion services, or advocate for a woman’s right to seek abortion services as part of comprehensive reproductive health care. These restrictions are not applied on US based NGOs because they would violate Constitutional protections of freedom of speech.
+          
 The memorandum directs “the Secretary of State, in coordination with the Secretary of Health and Human Services, to the extent allowable by law, to implement a plan to extend the requirements of the reinstated Memorandum to global health assistance furnished by all departments or agencies.” This could encompass US funding for programming related to Malaria, Zika, Ebola and HIV/AIDs, amongst others.`,
         },
       ],
@@ -89,21 +92,25 @@ description: `[Art 1, Art 2, Art 3, Art 5, Art 12, Art 19, and Art 25](http://ww
         },
       ],
     },
+
+
     {
       subject: `### Executive Orders Targeting Muslims`,
       tags: [''],
       citationList: [
         {
-          title: `#### Executive Order, January 27th, 2017`,
-          description: `Signed an Executive Order, “Protecting the Nation from Foreign Terrorist Entry into the United States,” lowering the number of refugees to be admitted into the United States to 50,000, suspending the U.S. Refugee Admissions Program (USRAP) for 120 days, suspending the entry of Syrian refugees indefinitely, and immediately imposing a 90-day ban on the entry of nationals from Iran, Iraq, Libya, Somalia, Sudan, Syria, and Yemen for immigration and non-immigration purposes, with limited exceptions.
+          title: `#### [Executive Order](https://www.whitehouse.gov/the-press-office/2017/01/27/executive-order-protecting-nation-foreign-terrorist-entry-united-states), January 27th, 2017`,
+          description: `Signed an Executive Order, “Protecting the Nation from Foreign Terrorist Entry into the United States,” lowering the number of refugees to be admitted into the United States to 50,000, suspending the [U.S. Refugee Admissions Program](https://en.wikipedia.org/wiki/United_States_Refugee_Admissions_Program) (USRAP) for 120 days, suspending the entry of [Syrian refugees](https://en.wikipedia.org/wiki/Refugees_of_the_Syrian_Civil_War) indefinitely, and immediately imposing a 90-day ban on the entry of nationals from Iran, Iraq, Libya, Somalia, Sudan, Syria, and Yemen for immigration and non-immigration purposes, with limited exceptions.
+
 This order was halted by a court order on February 3rd. On March 6th President Trump signed a second executive order with much of the same restrictions as the first. The second order was halted by a judge on March 16th.`,
         },
       ],
       lawList: [
         {
           title: `#### Refugee Convention [Art 33](http://www.unhcr.org/4ca34be29.pdf)
-Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment Art 3`,
+Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment [Art 3](http://www.unhcr.org/4ca34be29.pdf)`,
           description: `A religious bar could be held to violate US obligations in individual cases under international law, including the Refugee Convention and Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment, and would conflict with numerous US statutes concerning refugee protection.
+          
 It would also violate the principle of ‘non-refoulement’ in the Refugee Convention Art 33 and Convention against Torture Art 3, which states that you cannot force refugees or asylum seekers to return to a country in which they are likely to be subjected to persecution.`,
         }, {
           title: `#### International Covenant on Civil and Political Rights `,
@@ -121,6 +128,8 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Increasing Deportation Raids`,
       tags: [''],
@@ -144,6 +153,8 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Conducting a Raid in Yemen`,
       tags: [''],
@@ -151,6 +162,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         {
           title: `#### Authorized military action in Yemen, January 25th 2017`,
           description: `One US Commando and at least 23 civilians, including women and children, were killed in the January 29th mission on an al Qaeda in the Arabian Peninsula (AQAP) target, according to London-based NGO Reprieve and a Sanaa-based human rights worker.
+          
 The raid also destroyed much of the village of Yakla. Yemen’s foreign minister, Abdul Malik Al Mekhlafi, condemned the raid on Monday in a post on his official Twitter account as “extrajudicial killings.”`,
         },
       ],
@@ -167,6 +179,8 @@ The raid also destroyed much of the village of Yakla. Yemen’s foreign minister
         },
       ],
     },
+
+
     {
       subject: `### Punishing Women for Having Abortions`,
       tags: ['Women', 'Abortion'],
@@ -186,6 +200,8 @@ Trump: “Yeah, there has to be some form.”`,
         },
       ],
     },
+
+
     {
       subject: `### Pregnancy and Women in the Workforce`,
       tags: ['Women', 'Pregnancy'],
@@ -209,6 +225,8 @@ Trump: “Yeah, there has to be some form.”`,
         },
       ],
     },
+
+
     {
       subject: `### Locking Up Hillary Clinton`,
       tags: ['Hillary', 'Clinton'],
@@ -231,6 +249,8 @@ Trump: “Yeah, there has to be some form.”`,
         },
       ],
     },
+
+
     {
       subject: `### Killing the Families of Terrorists`,
       tags: ['Terrorist'],
@@ -251,18 +271,20 @@ Trump: “Yeah, there has to be some form.”`,
         },
       ],
     },
+
+
     {
       subject: `### Executing American Citizens Bowe Bergdahl and Edward Snowden`,
       tags: [''],
       citationList: [
         {
-          title: `#### Campaign Rally in Nevada, October 2015`,
+          title: `#### [Campaign Rally](http://www.washingtontimes.com/news/2015/oct/9/trump-bowe-bergdahl-no-good-traitor-should-have-be/) in Nevada, October 2015`,
           description: `“We’re tired of Sgt. Bergdahl, who’s a traitor, a no-good traitor, who should have been executed. Thirty years ago, he would have been shot.”`,
         }, {
-          title: `#### Campaign Rally in New Hampshire, August 2015`,
+          title: `#### [Campaign Rally](http://www.wsj.com/video/trump-bergdahl-a-dirty-rotten-traitor/F83D4013-58A3-4A8E-BE95-74DAC2A03BB1.html) in New Hampshire, August 2015`,
           description: `“So we get a traitor named Bergdahl, a dirty rotten traitor... you know in the old days, bing, bang [Trump mimes shooting a gun]. When we were strong.”`,
         }, {
-          title: `#### Interview on Fox & Friends, July 2013`,
+          title: `#### [Interview](http://www.politico.com/story/2013/07/donald-trump-edward-snowden-nsa-leak-093606) on Fox & Friends, July 2013`,
           description: `Trump: “I think Snowden is a terrible threat, I think he’s a terrible traitor, and you know what we used to do in the good old days when we were a strong country — you know what we used to do to traitors, right?” 
 Host: “Well, you killed them, Donald.” 
 Trump: “Well, he is damaging America.”`,
@@ -271,7 +293,7 @@ Trump: “Well, he is damaging America.”`,
       lawList: [
         {
           title: `#### US Constitution`,
-          description: `Fifth Amendment: Extrajudicial killings violate the right to due process.`,
+          description: `[Fifth Amendment](https://www.law.cornell.edu/constitution/fifth_amendment): Extrajudicial killings violate the right to due process.`,
         }, {
           title: `#### International Covenant on Civil and Political Rights`,
           description: `[Art 6](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Gives everyone the right to life and limits death sentences for only the “most serious crimes”.
@@ -282,6 +304,8 @@ Trump: “Well, he is damaging America.”`,
         },
       ],
     },
+
+
     {
       subject: `### Creating a Database of Muslims and Refugees`,
       tags: [''],
@@ -289,7 +313,8 @@ Trump: “Well, he is damaging America.”`,
         {
           title: `#### [Interview](https://www.washingtonpost.com/news/the-fix/wp/2016/11/17/the-evolution-of-donald-trump-and-the-muslim-database/?utm_term=.354537fbb72f) on ABC News, November 2016`,
           description: `Asked if he would rule out a database on all Muslims, Trump said no, but then shifted to talking about a database of refugees.
-“I want a database for the refugees that — if they come into the country. We have no idea who these people are. When the Syrian refugees are going to start pouring into this country, we don’t know if they’re ISIS, we don’t know if it’s a Trojan horse…And I definitely want a database and other checks and balances. We want to go with watch lists. We want to go with databases. And we have no choice.”`,
+          
+“I want a database for the refugees that — if they come into the country. We have no idea who these people are. When the Syrian refugees are going to start pouring into this country, we don’t know if they’re ISIS, we don’t know if it’s a Trojan horse... And I definitely want a database and other checks and balances. We want to go with watch lists. We want to go with databases. And we have no choice.”`,
         },
       ],
       lawList: [
@@ -308,6 +333,8 @@ Trump: “Well, he is damaging America.”`,
         },
       ],
     },
+
+
     {
       subject: `### Surveilling and Closing Mosques`,
       tags: [''],
@@ -315,7 +342,7 @@ Trump: “Well, he is damaging America.”`,
         {
           title: `#### [Campaign Rally](http://www.cnn.com/2015/11/21/politics/trump-muslims-surveillance/) in Alabama, November 2015`,
           description: `_On heavily surveilling mosques:_
-“I want surveillance of certain mosques if that’s OK I want surveillance. I will absolutely take (a) database on the people coming in from Syria…If we can’t stop it — but we are going to if I win — they’re going back.”`,
+“I want surveillance of certain mosques if that’s OK I want surveillance. I will absolutely take (a) database on the people coming in from Syria... If we can’t stop it — but we are going to if I win — they’re going back.”`,
         }, {
           title: `#### [Interview](https://www.washingtonpost.com/news/post-politics/wp/2015/11/16/donald-trump-would-strongly-consider-closing-some-mosques-in-the-united-states/?utm_term=.50708fbf31b0) with Morning Joe, November 2015`,
           description: `_On shutting down some mosques:_
@@ -338,6 +365,8 @@ Trump: “Well, he is damaging America.”`,
         },
       ],
     },
+
+
     {
       subject: `### Banning Muslims from Entering the US using “Extreme Vetting”`,
       tags: [''],
@@ -348,8 +377,9 @@ Trump: “Well, he is damaging America.”`,
         }, {
           title: `#### [Campaign Rally](https://www.washingtonpost.com/world/national-security/trump-to-propose-ideological-test-for-muslim-immigrants-and-visitors-to-the-us/2016/08/15/3192fdba-62fc-11e6-be4e-23fc4d4d12b4_story.html?utm_term=.5488fc3c44ab) in Ohio, August 2015`,
           description: `_Trump called for:_
-“extreme vetting… [for] any hostile attitude towards our country or its principles, or who believed sharia law should supplant American law. . . . Those who did not believe in our Constitution or who support bigotry and hatred will not be admitted for immigration into our country.”
-“In the Cold War, we had an ideological screening test. The time is overdue to develop a new screening test for the threats we face today. . . . I call it extreme, extreme vetting.”`,
+“extreme vetting...  [for] any hostile attitude towards our country or its principles, or who believed sharia law should supplant American law... Those who did not believe in our Constitution or who support bigotry and hatred will not be admitted for immigration into our country.”
+
+“In the Cold War, we had an ideological screening test. The time is overdue to develop a new screening test for the threats we face today... I call it extreme, extreme vetting.”`,
         },
       ],
       lawList: [
@@ -357,17 +387,21 @@ Trump: “Well, he is damaging America.”`,
           title: `#### Refugee Convention [Art 33](http://www.unhcr.org/4ca34be29.pdf) 
 Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment Art 3`,
           description: `A religious bar could be held to violate U.S. obligations in individual cases under international law, including the Refugee Convention and Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment, and it would conflict with numerous U.S. statutes concerning refugee protection.
+
 It would also violate the principle of ‘non-refoulement’ in the Refugee Convention Art 33 and Convention Against Torture Art 3, which states that you cannot force refugees or asylum seekers to return to a country in which they are liable to be subjected to persecution.`,
         },
       ],
     },
+
+
     {
       subject: `### Waterboarding and Torture`,
       tags: [''],
       citationList: [
         {
           title: `#### [Interview](http://www.cnn.com/2016/03/22/politics/donald-trump-brussels-2016-reaction/) on NBC, March 2016`,
-          description: `“Well I’m not looking to break any news on your show, but frankly the waterboarding, if it was up to me, and if we changed the laws or have the laws, waterboarding would be fine.” 
+          description: `“Well I’m not looking to break any news on your show, but frankly the waterboarding, if it was up to me, and if we changed the laws or have the laws, waterboarding would be fine.”
+
 “You know, we work within laws. They don’t work within laws — they have no laws. We work within laws. The waterboarding would be fine, and if they could expand the laws, I would do a lot more than waterboarding.”`,
         }, {
           title: `#### [Republican debate](https://www.theguardian.com/us-news/2016/feb/06/donald-trump-waterboarding-republican-debate-torture), February 2016`,
@@ -390,34 +424,38 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Revoking US Citizenship for Burning the Flag`,
       tags: [''],
       citationList: [
         {
-          title: `#### Tweet, November 2016`,
+          title: `#### [Tweet](http://www.independent.co.uk/news/people/donald-trump-american-flag-us-jail-citizenship-lose-twitter-tweet-a7445351.html), November 2016`,
           description: `“Nobody should be allowed to burn the American flag - if they do, there must be consequences - perhaps loss of citizenship or year in jail!”`,
         },
       ],
       lawList: [
         {
           title: `#### International Covenant on Civil and Political Rights`,
-          description: `Art 19: Gives the right to hold opinions and freedom of expression.`,
+          description: `[Art 19](http://www.ohchr.org/en/professionalinterest/pages/ccpr.aspx): Gives the right to hold opinions and freedom of expression.`,
         },
       ],
     },
+
+
     {
       subject: `### Expanding Stop and Frisk`,
       tags: [''],
       citationList: [
         {
-          title: `#### First Televised Presidential Debate, September 2016`,
+          title: `#### [First Televised Presidential Debate](http://www.politifact.com/truth-o-meter/statements/2016/sep/28/donald-trump/debate-donald-trump-says-stop-and-frisk-constituti/), September 2016`,
           description: `_On expanding the use of “stop and frisk”:_
-“Stop and frisk…worked very well in New York. It brought the crime rate way down. But you take the gun away from criminals that shouldn’t be having it.”`,
+“Stop and frisk... worked very well in New York. It brought the crime rate way down. But you take the gun away from criminals that shouldn’t be having it.”`,
         }, {
-          title: `#### Interview on The O’Reilly Factor, September 2016`,
+          title: `#### [Interview](https://www.washingtonpost.com/news/the-fix/wp/2016/09/20/donald-trump-doesnt-call-his-position-racial-profiling-it-is/) on The O’Reilly Factor, September 2016`,
           description: `_To Bill O’Riley:_
-“I never said the term Muslim…You did. You told me Muslims. I didn’t say that. I am saying you’re going to profile people that maybe look suspicious. I didn’t say they were Muslims.”`,
+“I never said the term Muslim... You did. You told me Muslims. I didn’t say that. I am saying you’re going to profile people that maybe look suspicious. I didn’t say they were Muslims.”`,
         },
       ],
       lawList: [
@@ -441,6 +479,8 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Shooting Iranian Boats`,
       tags: [''],
@@ -460,6 +500,8 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Inciting Violence Against Protestors`,
       tags: [''],
@@ -490,6 +532,8 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Using Drones to Kill Terrorist Suspects`,
       tags: ['Drones', 'Terrorist'],
@@ -509,6 +553,8 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Shooting Russian Aircraft`,
       tags: ['Russia'],
@@ -530,23 +576,25 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         },
       ],
     },
+
+
     {
       subject: `### Using Nuclear Weapons`,
       tags: [''],
       citationList: [
         {
-          title: `#### Interview with MSNBC, March, 2016`,
+          title: `#### [Interview](http://www.cbsnews.com/news/donald-trump-tweets-nuclear-weapons-expanding-capabilities/) with MSNBC, March, 2016`,
           description: `_Asked if he would drop a nuclear weapon in the Middle East:_
 “Somebody hits us within ISIS — you wouldn’t fight back with a nuke?”
 
 _Responding to a statement that no one wants to hear the US President talk about using nuclear weapons:_ 
 “Then why are we making them? Why do we make them?”`,
         }, {
-          title: `#### Interview on the O’Reilly Factor, March 2016`,
+          title: `#### [Interview](https://www.youtube.com/watch?v=jpMhrubf9mk) on the O’Reilly Factor, March 2016`,
           description: `_Asked about using nuclear weapons in Europe:_
 “Europe is a big place. I’m not going to take cards off the table. We have nuclear capability.”`,
         }, {
-          title: `#### Interview on CBS, January 2016`,
+          title: `#### [Interview](http://www.cbsnews.com/news/face-the-nation-transcripts-january-3-2016-trump-morell-donilon/) on CBS, January 2016`,
           description: `_On using nuclear weapons:_
 “Well, it is an absolute last stance. And, you know, I use the word unpredictable. You want to be unpredictable.”`,
         },
@@ -554,9 +602,9 @@ _Responding to a statement that no one wants to hear the US President talk about
       lawList: [
         {
           title: `#### Customary International Humanitarian Law`,
-          description: `Rule 1 and Rule 14: Reckless use of nuclear weapons violates Customary International Humanitarian Law Rule 1 on the principle of distinction, and 14 on the principle of proportionality, which prohibit attacks on civilians.`,
+          description: `[Rule 1](https://ihl-databases.icrc.org/customary-ihl/eng/docs/v1_cha_chapter1_rule1) and [Rule 14](https://ihl-databases.icrc.org/customary-ihl/eng/docs/v1_cha_chapter4_rule14): Reckless use of nuclear weapons violates Customary International Humanitarian Law Rule 1 on the principle of distinction, and 14 on the principle of proportionality, which prohibit attacks on civilians.`,
         }, {
-          title: `#### International Court of Justice, Legality of the Threat or Use of Nuclear Weapons`,
+          title: `#### International Court of Justice, [Legality of the Threat or Use of Nuclear Weapons](http://www.icj-cij.org/docket/index.php?sum=498&p1=3&p2=4&case=95&p3=5)`,
           description: `The use of nuclear weapons without security council authorization or self-defense is unlawful.`,
         },
       ],
