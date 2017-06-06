@@ -23,6 +23,30 @@ export default {
     updated: 'March 20, 2017',
   },
 
+  /*************************************
+   *           Tags
+   *
+   *
+   * Last updated: e-mail convo b/w @Aaron and @Stephanie, 2017.06.06
+   *
+
+
+ `Women’s Rights`,
+ `War Crimes`,
+ `Genocide`,
+ `Abortion`,
+ `Torture`,
+ `Racial Discrimination`,
+ `Religious Discrimination`,
+ `Free Speech`,
+
+
+
+   *
+   *
+   *
+   ************************/
+
 
   /**
    * Table text contents. Type using Markup. Reference here:
@@ -31,7 +55,7 @@ export default {
    * A SubjectCard template looks like this:
    {
      subject: `### `,
-     tags: [''],
+     tags: [],
      citationList: [
        {
          title: `#### `,
@@ -55,9 +79,15 @@ export default {
 
     {
       subject: `### Reinstating and Expanding the Global Gag Rule`,
-      tags: [''],
+      tags: [`Women’s Rights`, `Abortion`,],
       citationList: [
         {
+          title: `#### [Letter](http://time.com/4724227/unfpa-funding-trump-mexico-city-policy-abortion/) Defunding U.N. Population Fund (UNFPA), April 2nd 2017`,
+          description: `The State Department issued a letter to the Senate Foreign Relations Committee announcing that it will end funding for the U.N. Population Fund, which provides healthcare for women and children in over 150 countries around the world. This will result in the loss of $32.5 million in funding for the UNFPA for the next budget year.`,
+        }, {
+          title: `#### Protecting Life in Global Health Assistance [Implementation Guidelines](https://www.state.gov/r/pa/prs/ps/2017/05/270866.htm), May 15th 2017`,
+          description: `Introduced a new policy, “Protecting Life in Global Health Assistance,” expanding the Global Gag Rule restrictions to impact $8.8 billion in global health assistance.`,
+        }, {
           title: `#### Executive Order, January 27th 2017`,
           description: `Signed a [Presidential Memorandum](https://www.whitehouse.gov/the-press-office/2017/01/23/presidential-memorandum-regarding-mexico-city-policy) blocking federal funding for international NGOs or programs that provide information, counseling, or referrals for abortion services, provide abortion services, or advocate for a woman’s right to seek abortion services as part of comprehensive reproductive health care. These restrictions are not applied on US based NGOs because they would violate Constitutional protections of freedom of speech.
           
@@ -87,7 +117,7 @@ Women and girls facing pregnancy during armed conflict are entitled non-discrimi
 [Art 14](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CAT.aspx): Prohibits cruel and inhuman treatment.`,
         }, {
           title: `#### Universal Declaration of Human Rights`,
-description: `[Art 1, Art 2, Art 3, Art 5, Art 12, Art 19, and Art 25](http://www.ohchr.org/EN/UDHR/Documents/UDHR_Translations/eng.pdf): Includes the right to equality, right to be free from discrimination, right to life, liberty and security, right to be free from torture and cruel treatment, right to privacy, right to health, and protections for free speech and expression.`,
+          description: `[Art 1, Art 2, Art 3, Art 5, Art 12, Art 19, and Art 25](http://www.ohchr.org/EN/UDHR/Documents/UDHR_Translations/eng.pdf): Includes the right to equality, right to be free from discrimination, right to life, liberty and security, right to be free from torture and cruel treatment, right to privacy, right to health, and protections for free speech and expression.`,
         },
       ],
     },
@@ -95,7 +125,7 @@ description: `[Art 1, Art 2, Art 3, Art 5, Art 12, Art 19, and Art 25](http://ww
 
     {
       subject: `### Executive Orders Targeting Muslims`,
-      tags: [''],
+      tags: [ `Religious Discrimination`,],
       citationList: [
         {
           title: `#### [Executive Order](https://www.whitehouse.gov/the-press-office/2017/01/27/executive-order-protecting-nation-foreign-terrorist-entry-united-states), January 27th, 2017`,
@@ -130,7 +160,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Increasing Deportation Raids`,
-      tags: [''],
+      tags: [ `Racial Discrimination`,],
       citationList: [
         {
           title: `#### Executive Order, January 25th 2017`,
@@ -155,7 +185,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Conducting a Raid in Yemen`,
-      tags: [''],
+      tags: [`War Crimes`,],
       citationList: [
         {
           title: `#### Authorized military action in Yemen, January 25th 2017`,
@@ -181,7 +211,7 @@ The raid also destroyed much of the village of Yakla. Yemen’s foreign minister
 
     {
       subject: `### Punishing Women for Having Abortions`,
-      tags: ['Women', 'Abortion'],
+      tags: [`Women’s Rights`, `Abortion`,],
       citationList: [
         {
           title: `#### [Interview](https://www.youtube.com/watch?v=jGSttcyn2RI) on MSNBC, March 2016 `,
@@ -202,7 +232,7 @@ Trump: “Yeah, there has to be some form.”`,
 
     {
       subject: `### Pregnancy and Women in the Workforce`,
-      tags: ['Women', 'Pregnancy'],
+      tags: [`Women’s Rights`,],
       citationList: [
         {
           title: `#### [Interview](http://www.nbcnews.com/politics/2016-election/trump-2004-pregnancy-inconvenience-employers-n580366) on NBC, October 2004`,
@@ -227,7 +257,7 @@ Trump: “Yeah, there has to be some form.”`,
 
     {
       subject: `### Locking Up Hillary Clinton`,
-      tags: ['Hillary', 'Clinton'],
+      tags: [ `Free Speech`,],
       citationList: [
         {
           title: `#### [Campaign Rallies](https://www.washingtonpost.com/news/the-fix/wp/2016/11/22/a-brief-history-of-the-lock-her-up-chant-as-it-looks-like-trump-might-not-even-try/?utm_term=.c3073b19a8ab), 2016`,
@@ -251,7 +281,7 @@ Trump: “Yeah, there has to be some form.”`,
 
     {
       subject: `### Killing the Families of Terrorists`,
-      tags: ['Terrorist'],
+      tags: [`War Crimes`,],
       citationList: [
         {
           title: `#### [Interview](http://www.cnn.com/2015/12/02/politics/donald-trump-terrorists-families/) on Fox & Friends, December 2015`,
@@ -273,7 +303,7 @@ Trump: “Yeah, there has to be some form.”`,
 
     {
       subject: `### Executing American Citizens Bowe Bergdahl and Edward Snowden`,
-      tags: [''],
+      tags: [`War Crimes`,],
       citationList: [
         {
           title: `#### [Campaign Rally](http://www.washingtontimes.com/news/2015/oct/9/trump-bowe-bergdahl-no-good-traitor-should-have-be/) in Nevada, October 2015`,
@@ -306,7 +336,7 @@ Trump: “Well, he is damaging America.”`,
 
     {
       subject: `### Creating a Database of Muslims and Refugees`,
-      tags: [''],
+      tags: [ `Religious Discrimination`,],
       citationList: [
         {
           title: `#### [Interview](https://www.washingtonpost.com/news/the-fix/wp/2016/11/17/the-evolution-of-donald-trump-and-the-muslim-database/?utm_term=.354537fbb72f) on ABC News, November 2016`,
@@ -335,7 +365,7 @@ Trump: “Well, he is damaging America.”`,
 
     {
       subject: `### Surveilling and Closing Mosques`,
-      tags: [''],
+      tags: [ `Religious Discrimination`,],
       citationList: [
         {
           title: `#### [Campaign Rally](http://www.cnn.com/2015/11/21/politics/trump-muslims-surveillance/) in Alabama, November 2015`,
@@ -367,7 +397,7 @@ Trump: “Well, he is damaging America.”`,
 
     {
       subject: `### Banning Muslims from Entering the US using “Extreme Vetting”`,
-      tags: [''],
+      tags: [ `Religious Discrimination`,],
       citationList: [
         {
           title: `#### [Press conference/press release](https://www.donaldjtrump.com/press-releases/donald-j.-trump-statement-on-preventing-muslim-immigration), December 2015`,
@@ -392,7 +422,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Waterboarding and Torture`,
-      tags: [''],
+      tags: [`War Crimes`, `Torture`,],
       citationList: [
         {
           title: `#### [Interview](http://www.cnn.com/2016/03/22/politics/donald-trump-brussels-2016-reaction/) on NBC, March 2016`,
@@ -423,7 +453,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Revoking US Citizenship for Burning the Flag`,
-      tags: [''],
+      tags: [ `Free Speech`,],
       citationList: [
         {
           title: `#### [Tweet](http://www.independent.co.uk/news/people/donald-trump-american-flag-us-jail-citizenship-lose-twitter-tweet-a7445351.html), November 2016`,
@@ -441,7 +471,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Expanding Stop and Frisk`,
-      tags: [''],
+      tags: [ `Racial Discrimination`, `Religious Discrimination`,],
       citationList: [
         {
           title: `#### [First Televised Presidential Debate](http://www.politifact.com/truth-o-meter/statements/2016/sep/28/donald-trump/debate-donald-trump-says-stop-and-frisk-constituti/), September 2016`,
@@ -478,7 +508,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Shooting Iranian Boats`,
-      tags: [''],
+      tags: [`War Crimes`,],
       citationList: [
         {
           title: `#### [Campaign Rally in Florida](http://fox40.com/2016/09/09/trump-on-iran-ship-behavior-they-will-be-shot-out-of-the-water/), September 2016`,
@@ -499,7 +529,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Inciting Violence Against Protestors`,
-      tags: [''],
+      tags: [ `Free Speech`,],
       citationList: [
         {
           title: `#### [Campaign Rally](https://www.washingtonpost.com/news/morning-mix/wp/2016/02/23/donald-trump-on-protester-id-like-to-punch-him-in-the-face/?utm_term=.612a47d46065) in Nevada, March 2016`,
@@ -531,7 +561,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Using Drones to Kill Terrorist Suspects`,
-      tags: ['Drones', 'Terrorist'],
+      tags: [`War Crimes`,],
       citationList: [
         {
           title: `#### [Interview](https://www.democracynow.org/2016/12/27/what_will_happen_when_donald_trump) with the Daily Mail, May 2016`,
@@ -552,7 +582,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Shooting Russian Aircraft`,
-      tags: ['Russia'],
+      tags: [`War Crimes`,],
       citationList: [
         {
           title: `#### [Interview](http://www.ibtimes.co.uk/trump-says-us-has-gotta-shoot-russian-planes-performing-barrel-rolls-if-democracy-fails-1558024) on Fort Wayne's Morning News, May 2016`,
@@ -575,7 +605,7 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
 
     {
       subject: `### Using Nuclear Weapons`,
-      tags: [''],
+      tags: [`War Crimes`, `Genocide`,],
       citationList: [
         {
           title: `#### [Interview](http://www.cbsnews.com/news/donald-trump-tweets-nuclear-weapons-expanding-capabilities/) with MSNBC, March, 2016`,
@@ -604,25 +634,48 @@ _Responding to a statement that no one wants to hear the US President talk about
       ],
     },
 
+
     {
-     subject: `### Repealing the Affordable Care Act`,
-     tags: [''],
-     citationList: [
-       {
-         title: `#### [Repeal](https://www.nytimes.com/2017/05/04/us/politics/health-care-bill-vote.html?_r=0) of Affordable Care Act, May 4, 2017`,
-         description: `The Office of the U.N. High Commissioner on Human Rights in Geneva sent a [letter](https://www.washingtonpost.com/r/2010-2019/WashingtonPost/2017/04/25/Editorial-Opinion/Graphics/103_17_ACA_Repeal_Request_for_Information.pdf) to the Trump administration in February 2017 that the repeal of the ACA would put the United States “at odds with its international obligations.”`,
-       },
-     ],
-     lawList: [
-       {
-         title: `#### Universal Declaration of Human Rights`,
-         description: `Art. 25: “Establishes everyone’s right to a standard of living adequate for the health and well-being, including food, medical care and necessary social services.”`,
-       }, {
-         title: `#### International Convention on the Elimination of All Forms of Racial Discrimination`,
-         description: `“Guarantees the right of everyone,” including “the rights to public health, medical care, social security and social services” without regard to race or color.`,
-       },
-     ],
-   },
+      subject: `### Repealing the Affordable Care Act`,
+      tags: [ `Racial Discrimination`,],
+      citationList: [
+        {
+          title: `#### [Repeal](https://www.nytimes.com/2017/05/04/us/politics/health-care-bill-vote.html?_r=0) of Affordable Care Act, May 4, 2017`,
+          description: `The Office of the U.N. High Commissioner on Human Rights in Geneva sent a [letter](https://www.washingtonpost.com/r/2010-2019/WashingtonPost/2017/04/25/Editorial-Opinion/Graphics/103_17_ACA_Repeal_Request_for_Information.pdf) to the Trump administration in February 2017 that the repeal of the ACA would put the United States “at odds with its international obligations.”`,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### Universal Declaration of Human Rights`,
+          description: `Art. 25: “Establishes everyone’s right to a standard of living adequate for the health and well-being, including food, medical care and necessary social services.”`,
+        }, {
+          title: `#### International Convention on the Elimination of All Forms of Racial Discrimination`,
+          description: `“Guarantees the right of everyone,” including “the rights to public health, medical care, social security and social services” without regard to race or color.`,
+        },
+      ],
+    },
+
+
+    {
+      subject: `### Limiting Protections for Civilians in Somalia`,
+      tags: [`War Crimes`, `Genocide`,],
+      citationList: [
+        {
+          title: `#### [Directive](https://www.nytimes.com/2017/03/30/world/africa/trump-is-said-to-ease-combat-rules-in-somalia-designed-to-protect-civilians.html?_r=0) reducing protections for civilians, March 29th 2017`,
+          description: `Issued a directive that eased combat rules intended to protect civilians and prevent civilian casualties. Parts of Yemen and Southern Somalia can now be targeted under less restrictive battlefield rules, which may lead to more civilian deaths.`,
+        },
+      ],
+      lawList: [
+        {
+          title: `#### Customary International Humanitarian Law `,
+          description: `[Rule 1](https://ihl-databases.icrc.org/customary-ihl/eng/docs/v1_cha_chapter1_rule1) and [Rule 14](https://ihl-databases.icrc.org/customary-ihl/eng/docs/v1_cha_chapter4_rule14): Attacking civilians is a war crime and potential crime against humanity which violates Customary International Humanitarian Law Rule 1 on the principle of distinction, and 14 on the principle of proportionality.`,
+        }, {
+          title: `#### `,
+          description: ``,
+        },
+      ],
+    },
+
 
   ],
 };
