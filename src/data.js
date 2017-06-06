@@ -29,7 +29,6 @@ export default {
    *   http://commonmark.org/help/
    *
    * A SubjectCard template looks like this:
-
    {
      subject: `### `,
      tags: [''],
@@ -101,7 +100,6 @@ description: `[Art 1, Art 2, Art 3, Art 5, Art 12, Art 19, and Art 25](http://ww
         {
           title: `#### [Executive Order](https://www.whitehouse.gov/the-press-office/2017/01/27/executive-order-protecting-nation-foreign-terrorist-entry-united-states), January 27th, 2017`,
           description: `Signed an Executive Order, “Protecting the Nation from Foreign Terrorist Entry into the United States,” lowering the number of refugees to be admitted into the United States to 50,000, suspending the [U.S. Refugee Admissions Program](https://en.wikipedia.org/wiki/United_States_Refugee_Admissions_Program) (USRAP) for 120 days, suspending the entry of [Syrian refugees](https://en.wikipedia.org/wiki/Refugees_of_the_Syrian_Civil_War) indefinitely, and immediately imposing a 90-day ban on the entry of nationals from Iran, Iraq, Libya, Somalia, Sudan, Syria, and Yemen for immigration and non-immigration purposes, with limited exceptions.
-
 This order was halted by a court order on February 3rd. On March 6th President Trump signed a second executive order with much of the same restrictions as the first. The second order was halted by a judge on March 16th.`,
         },
       ],
@@ -378,7 +376,6 @@ Trump: “Well, he is damaging America.”`,
           title: `#### [Campaign Rally](https://www.washingtonpost.com/world/national-security/trump-to-propose-ideological-test-for-muslim-immigrants-and-visitors-to-the-us/2016/08/15/3192fdba-62fc-11e6-be4e-23fc4d4d12b4_story.html?utm_term=.5488fc3c44ab) in Ohio, August 2015`,
           description: `_Trump called for:_
 “extreme vetting...  [for] any hostile attitude towards our country or its principles, or who believed sharia law should supplant American law... Those who did not believe in our Constitution or who support bigotry and hatred will not be admitted for immigration into our country.”
-
 “In the Cold War, we had an ideological screening test. The time is overdue to develop a new screening test for the threats we face today... I call it extreme, extreme vetting.”`,
         },
       ],
@@ -387,7 +384,6 @@ Trump: “Well, he is damaging America.”`,
           title: `#### Refugee Convention [Art 33](http://www.unhcr.org/4ca34be29.pdf) 
 Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment Art 3`,
           description: `A religious bar could be held to violate U.S. obligations in individual cases under international law, including the Refugee Convention and Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment, and it would conflict with numerous U.S. statutes concerning refugee protection.
-
 It would also violate the principle of ‘non-refoulement’ in the Refugee Convention Art 33 and Convention Against Torture Art 3, which states that you cannot force refugees or asylum seekers to return to a country in which they are liable to be subjected to persecution.`,
         },
       ],
@@ -401,7 +397,6 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
         {
           title: `#### [Interview](http://www.cnn.com/2016/03/22/politics/donald-trump-brussels-2016-reaction/) on NBC, March 2016`,
           description: `“Well I’m not looking to break any news on your show, but frankly the waterboarding, if it was up to me, and if we changed the laws or have the laws, waterboarding would be fine.”
-
 “You know, we work within laws. They don’t work within laws — they have no laws. We work within laws. The waterboarding would be fine, and if they could expand the laws, I would do a lot more than waterboarding.”`,
         }, {
           title: `#### [Republican debate](https://www.theguardian.com/us-news/2016/feb/06/donald-trump-waterboarding-republican-debate-torture), February 2016`,
@@ -586,7 +581,6 @@ It would also violate the principle of ‘non-refoulement’ in the Refugee Conv
           title: `#### [Interview](http://www.cbsnews.com/news/donald-trump-tweets-nuclear-weapons-expanding-capabilities/) with MSNBC, March, 2016`,
           description: `_Asked if he would drop a nuclear weapon in the Middle East:_
 “Somebody hits us within ISIS — you wouldn’t fight back with a nuke?”
-
 _Responding to a statement that no one wants to hear the US President talk about using nuclear weapons:_ 
 “Then why are we making them? Why do we make them?”`,
         }, {
@@ -609,5 +603,26 @@ _Responding to a statement that no one wants to hear the US President talk about
         },
       ],
     },
+
+    {
+     subject: `### Repealing the Affordable Care Act`,
+     tags: [''],
+     citationList: [
+       {
+         title: `#### [Repeal](https://www.nytimes.com/2017/05/04/us/politics/health-care-bill-vote.html?_r=0) of Affordable Care Act, May 4, 2017`,
+         description: `The Office of the U.N. High Commissioner on Human Rights in Geneva sent a [letter](https://www.washingtonpost.com/r/2010-2019/WashingtonPost/2017/04/25/Editorial-Opinion/Graphics/103_17_ACA_Repeal_Request_for_Information.pdf) to the Trump administration in February 2017 that the repeal of the ACA would put the United States “at odds with its international obligations.”`,
+       },
+     ],
+     lawList: [
+       {
+         title: `#### Universal Declaration of Human Rights`,
+         description: `Art. 25: “Establishes everyone’s right to a standard of living adequate for the health and well-being, including food, medical care and necessary social services.”`,
+       }, {
+         title: `#### International Convention on the Elimination of All Forms of Racial Discrimination`,
+         description: `“Guarantees the right of everyone,” including “the rights to public health, medical care, social security and social services” without regard to race or color.`,
+       },
+     ],
+   },
+
   ],
 };
