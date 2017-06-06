@@ -669,9 +669,6 @@ _Responding to a statement that no one wants to hear the US President talk about
         {
           title: `#### Customary International Humanitarian Law `,
           description: `[Rule 1](https://ihl-databases.icrc.org/customary-ihl/eng/docs/v1_cha_chapter1_rule1) and [Rule 14](https://ihl-databases.icrc.org/customary-ihl/eng/docs/v1_cha_chapter4_rule14): Attacking civilians is a war crime and potential crime against humanity which violates Customary International Humanitarian Law Rule 1 on the principle of distinction, and 14 on the principle of proportionality.`,
-        }, {
-          title: `#### `,
-          description: ``,
         },
       ],
     },
