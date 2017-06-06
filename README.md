@@ -1,6 +1,8 @@
 # law-and-trump
 Material Design-themed React app of violations of law by Trump.
 
+Hosted at: http://globaljusticecenter.net/publications/law-and-trump
+
 Demo at: https://sterlingvix.github.io/law-and-trump/
 
 # Contributing
