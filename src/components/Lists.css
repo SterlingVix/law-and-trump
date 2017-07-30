@@ -1,3 +1,20 @@
+
+
+/**
+ TODO:
+
+http://caniuse.com/#feat=flexbox
+
+Safari 10 and below uses min/max width/height declarations for actually rendering the size of flex items, but it ignores those values when calculating how many items should be on a single line of a multi-line flex container. Instead, it simply uses the item's flex-basis value, or its width if the flex basis is set to auto. see bug. Fixed in all versions > 10.
+https://bugs.webkit.org/show_bug.cgi?id=136041
+
+In Safari, the height of (non flex) children are not recognized in percentages. However other browsers recognize and scale the children based on percentage heights. (See bug) The bug also appeared in Chrome but was fixed in Chrome 51
+https://bugs.webkit.org/show_bug.cgi?id=137730
+
+
+https://github.com/philipwalton/flexbugs
+ */
+
 .list {
     margin: 0;
     width: 100%;
