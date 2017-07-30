@@ -1,5 +1,6 @@
 import Markdown from 'react-remarkable';
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Lists.css';
 
 class LawList extends Component {

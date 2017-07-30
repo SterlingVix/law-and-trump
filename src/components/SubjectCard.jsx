@@ -1,7 +1,8 @@
 import CitationList from './CitationList';
 import LawList from './LawList';
 import Markdown from 'react-remarkable';
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './SubjectCard.css';
 
 class SubjectCard extends React.Component {
@@ -45,7 +46,7 @@ SubjectCard.defaultProps = {
 };
 
 SubjectCard.propTypes = {
-  card: React.PropTypes.object,
+  card: PropTypes.object,
   handleCitationText: PropTypes.func.isRequired,
   handleLawText: PropTypes.func.isRequired,
   handleSubjectText: PropTypes.func.isRequired,

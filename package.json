@@ -17,9 +17,12 @@
     "react-remarkable": "^1.1.1",
     "remarkable": "^1.7.1"
   },
+
   "devDependencies": {
     "react-scripts": "1.0.10"
   },
+
+  "proxy": "http://localhost:4000",
 
   "scripts": {
     "start": "react-scripts start",
