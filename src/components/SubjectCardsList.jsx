@@ -83,8 +83,6 @@ class SubjectCardsList extends Component {
 
             const shouldShow = (citFlag || lawFlag || subFlag || tagFlag);
 
-            debugger;
-
             return shouldShow ?
               <SubjectCard
                 handleText={this.highlightText}
