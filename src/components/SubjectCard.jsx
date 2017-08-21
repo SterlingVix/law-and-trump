@@ -6,11 +6,12 @@ import './SubjectCard.css';
 
 class SubjectCard extends React.Component {
   static propTypes = {
-    card: React.PropTypes.object,
+    card: PropTypes.object,
     handleCitationText: PropTypes.func.isRequired,
     handleLawText: PropTypes.func.isRequired,
     handleSubjectText: PropTypes.func.isRequired,
     handleTagText: PropTypes.func.isRequired,
+    opts: PropTypes.object.isRequired,
     showTags: PropTypes.bool.isRequired,
     tags: PropTypes.string,
   };
@@ -21,10 +22,8 @@ class SubjectCard extends React.Component {
 
   render() {
     const {
-      handleCitationText, handleLawText, handleSubjectText, handleTagText, showTags, card, tags,
+      handleCitationText, handleLawText, handleSubjectText, handleTagText, showTags, card, tags, opts,
     } = this.props;
-
-    const opts = { options: { html: true, breaks: true, xhtmlOut: true, } };
 
     return (
       <div className="subjectCard">
@@ -32,10 +31,18 @@ class SubjectCard extends React.Component {
         <div className="cardHeaderContainer">
           <div className="cardTitleContainer">
             <Markdown {...opts} source={handleSubjectText(card.subject)}/>
+            {/*<Markdown {...opts}>*/}
+            {/*<span>{handleText(card.subject)}</span>*/}
+            {/*</Markdown>*/}
           </div>
 
           {showTags ?
-            (<div className="tags"><Markdown {...opts} source={handleTagText(tags)}/></div>) :
+            (<div className="tags">
+              <Markdown {...opts} source={handleTagText(tags)}/>
+              {/*<Markdown {...opts}>*/}
+              {/*<span>{handleText(tags)}</span>*/}
+              {/*</Markdown>*/}
+            </div>) :
             null}
         </div>
 

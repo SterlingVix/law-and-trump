@@ -16,6 +16,8 @@
 .citation,
 .law {
     display: block;
+    /*position: relative;*/
+    /*display: -webkit-flex; display: flex;*/
     width: 100%;
     flex-basis: 50%;
     margin: 0;

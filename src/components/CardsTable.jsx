@@ -22,6 +22,24 @@ class CardsTable extends Component {
       { original: `'`, replacement: `(’|')` },
       // { original: `"`, replacement: `("|“|”)` }, // currently unused
     ];
+
+
+    this.opts = {
+      container: 'div',
+      options: {
+        html: true,        // Enable HTML tags in source
+        // xhtmlOut: false,   // Use '/' to close single tags (<br />)
+        breaks: true,      // Convert '\n' in paragraphs into <br>\
+        // linkify: false, // Autoconvert URL-like text to links
+
+        // Enable some language-neutral replacement + quotes beautification
+        // typographer: false,
+
+        // Double + single quotes replacement pairs, when typographer enabled,
+        // and smartquotes on. Set doubles to '«»' for Russian, '„“' for German.
+        quotes: false,
+      },
+    };
   }
 
   /**
@@ -66,13 +84,13 @@ class CardsTable extends Component {
           <div className="tableTitleRow">
 
             <div className="leftColumn">
-              <Markdown>
+              <Markdown {...this.opts}>
                 <span className="tableTitleLeft">{data.config.tableTitleLeft}</span>
               </Markdown>
             </div>
 
             <div className="rightColumn">
-              <Markdown>
+              <Markdown {...this.opts}>
                 <span className="tableTitleRight">{data.config.tableTitleRight}</span>
               </Markdown>
             </div>
@@ -88,6 +106,7 @@ class CardsTable extends Component {
           showTags={this.state.showTags}
           showCommas={this.state.showCommas}
           highlightTagsOnly={this.state.highlightTagsOnly}
+          opts={this.opts}
         />
       </div>
     );

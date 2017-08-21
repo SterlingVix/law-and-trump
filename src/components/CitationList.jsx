@@ -5,14 +5,23 @@ import './Lists.css';
 class CitationList extends Component {
   render() {
     const { citationList, handleText, opts } = this.props;
-    const container = { container: 'div' };
 
     return (
       <div className="list">
         {citationList.map((citation, index) => (
           <div key={index} className="citation">
-            <Markdown {...container} source={handleText(citation.title)} className="title" {...opts}/>
-            <Markdown {...container} source={handleText(citation.description)} className="description" {...opts}/>
+            <div className="title">
+              <Markdown source={handleText(citation.title)} {...opts}/>
+              {/*<Markdown {...opts}>*/}
+                {/*<span>{handleText(citation.title)}</span>*/}
+              {/*</Markdown>*/}
+            </div>
+            <div className="description">
+              <Markdown source={handleText(citation.description)} {...opts}/>
+              {/*<Markdown {...opts}>*/}
+                {/*<span>{handleText(citation.description)}</span>*/}
+              {/*</Markdown>*/}
+            </div>
           </div>
         ))}
       </div>

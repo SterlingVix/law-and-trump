@@ -5,14 +5,23 @@ import './Lists.css';
 class LawList extends Component {
   render() {
     const { lawList, handleText, opts } = this.props;
-    const container = { container: 'div' };
 
     return (
       <div className="list">
         {lawList.map((law, index) => (
           <div key={index} className="law">
-            <Markdown {...container} source={handleText(law.title)} className="title"{...opts}/>
-            <Markdown {...container} source={handleText(law.description)} className="description"{...opts}/>
+            <div className="title">
+              <Markdown source={handleText(law.title)} {...opts}/>
+              {/*<Markdown {...opts}>*/}
+              {/*<span>{handleText(law.title)}</span>*/}
+              {/*</Markdown>*/}
+            </div>
+            <div className="description">
+              <Markdown source={handleText(law.description)} {...opts}/>
+              {/*<Markdown {...opts}>*/}
+              {/*<span>{handleText(law.description)}</span>*/}
+              {/*</Markdown>*/}
+            </div>
           </div>
         ))}
       </div>
