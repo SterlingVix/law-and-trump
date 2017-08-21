@@ -8,6 +8,7 @@ class SubjectCardsList extends Component {
     filterText: PropTypes.string.isRequired,
     filterTextRegexp: PropTypes.any,
     highlightTagsOnly: PropTypes.bool.isRequired,
+    opts: PropTypes.object.isRequired,
     replacementRegexp: PropTypes.any,
     showCommas: PropTypes.bool,
     showTags: PropTypes.bool.isRequired,
@@ -38,15 +39,19 @@ class SubjectCardsList extends Component {
 
           const commonProps = { card, key, showTags, tags: joinCards(card.tags), };
 
-          // If we have filter text, show this card if it matches
+          // If we have filter no text, show this card.
           if (!filterText) {
-            return <SubjectCard
-              {...commonProps}
-              handleCitationText={this.getText}
-              handleLawText={this.getText}
-              handleSubjectText={this.getText}
-              handleTagText={this.getText}
-            />;
+            return (
+              <div className="subjectCardContainer">
+                <SubjectCard
+                  handleCitationText={this.getText}
+                  handleLawText={this.getText}
+                  handleSubjectText={this.getText}
+                  handleTagText={this.getText}
+                  opts={this.props.opts}
+                  {...commonProps}
+                />
+              </div>);
           }
 
           /**
@@ -59,15 +64,18 @@ class SubjectCardsList extends Component {
              */
             const tagFlag = filterTextRegexp.test(commonProps.tags);
 
-            return tagFlag ?
-              <SubjectCard
-                handleText={this.highlightText}
-                {...commonProps}
-                handleCitationText={this.getText}
-                handleLawText={this.getText}
-                handleSubjectText={this.getText}
-                handleTagText={this.getTextHandler(tagFlag)}
-              /> :
+            return tagFlag ? (
+              <div className="subjectCardContainer">
+                <SubjectCard
+                  handleCitationText={this.getText}
+                  handleLawText={this.getText}
+                  handleSubjectText={this.getText}
+                  handleTagText={this.getTextHandler(tagFlag)}
+                  handleText={this.highlightText}
+                  opts={this.props.opts}
+                  {...commonProps}
+                />
+              </div>) :
               null;
           } else {
             /**
@@ -83,15 +91,18 @@ class SubjectCardsList extends Component {
 
             const shouldShow = (citFlag || lawFlag || subFlag || tagFlag);
 
-            return shouldShow ?
-              <SubjectCard
-                handleText={this.highlightText}
-                {...commonProps}
-                handleCitationText={this.getTextHandler(citFlag)}
-                handleLawText={this.getTextHandler(lawFlag)}
-                handleSubjectText={this.getTextHandler(subFlag)}
-                handleTagText={this.getTextHandler(tagFlag)}
-              /> :
+            return shouldShow ? (
+              <div className="subjectCardContainer">
+                <SubjectCard
+                  handleCitationText={this.getTextHandler(citFlag)}
+                  handleLawText={this.getTextHandler(lawFlag)}
+                  handleSubjectText={this.getTextHandler(subFlag)}
+                  handleTagText={this.getTextHandler(tagFlag)}
+                  handleText={this.highlightText}
+                  opts={this.props.opts}
+                  {...commonProps}
+                />
+              </div>) :
               null;
           }
         })}

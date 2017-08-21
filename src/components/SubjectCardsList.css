@@ -7,6 +7,12 @@
     overflow-y: auto;
 }
 
+.subjectCardContainer {
+    /*position: relative;*/
+    /*display: -webkit-flex; display: flex;*/
+    display: block;
+}
+
 .highlighted {
     /*background-color: #ffe446;*/
 }

@@ -11,8 +11,12 @@ class CitationList extends Component {
       <div className="list">
         {citationList.map((citation, index) => (
           <div key={index} className="citation">
-            <Markdown {...container} source={handleText(citation.title)} className="title" {...opts}/>
-            <Markdown {...container} source={handleText(citation.description)} className="description" {...opts}/>
+            <div className="title">
+              <Markdown {...container} source={handleText(citation.title)} {...opts}/>
+            </div>
+            <div className="description">
+              <Markdown {...container} source={handleText(citation.description)} {...opts}/>
+            </div>
           </div>
         ))}
       </div>
