@@ -13,8 +13,9 @@ class CardsTable extends Component {
       filterText: '',
       replacementRegexp: null,
       showCommas: data.config.showCommas,
-      showTags: data.config.showTags,
       showPhoto: data.config.showPhoto,
+      showTags: data.config.showTags,
+      highlightTagsOnly: data.config.highlightTagsOnly,
     };
   }
 
@@ -33,7 +34,6 @@ class CardsTable extends Component {
     return (
       <div className="cardsTable">
         <div className={`tableHeader textShadow ${this.state.showPhoto ? 'backgroundPhoto' : ''}`}>
-          {/* TODO: add "Updated MM DD" here. */}
 
           <div className="searchRow">
             <SearchComponent className="filterInput" filterCardsCallback={this.updateFilter}/>
@@ -63,6 +63,7 @@ class CardsTable extends Component {
           replacementRegexp={this.state.replacementRegexp}
           showTags={this.state.showTags}
           showCommas={this.state.showCommas}
+          highlightTagsOnly={this.state.highlightTagsOnly}
         />
       </div>
     );

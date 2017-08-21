@@ -5,6 +5,20 @@ import React, { PropTypes } from 'react';
 import './SubjectCard.css';
 
 class SubjectCard extends React.Component {
+  static propTypes = {
+    card: React.PropTypes.object,
+    handleCitationText: PropTypes.func.isRequired,
+    handleLawText: PropTypes.func.isRequired,
+    handleSubjectText: PropTypes.func.isRequired,
+    handleTagText: PropTypes.func.isRequired,
+    showTags: PropTypes.bool.isRequired,
+    tags: PropTypes.string,
+  };
+
+  static defaultProps = {
+    tags: '',
+  };
+
   render() {
     const {
       handleCitationText, handleLawText, handleSubjectText, handleTagText, showTags, card, tags,
@@ -39,19 +53,5 @@ class SubjectCard extends React.Component {
     );
   }
 }
-
-SubjectCard.defaultProps = {
-  tags: '',
-};
-
-SubjectCard.propTypes = {
-  card: React.PropTypes.object,
-  handleCitationText: PropTypes.func.isRequired,
-  handleLawText: PropTypes.func.isRequired,
-  handleSubjectText: PropTypes.func.isRequired,
-  handleTagText: PropTypes.func.isRequired,
-  showTags: PropTypes.bool.isRequired,
-  tags: PropTypes.string,
-};
 
 export default SubjectCard;

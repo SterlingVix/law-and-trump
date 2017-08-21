@@ -3,6 +3,20 @@ import './SubjectCardsList.css';
 import SubjectCard from './SubjectCard';
 
 class SubjectCardsList extends Component {
+  static propTypes = {
+    cardsList: PropTypes.array.isRequired,
+    filterText: PropTypes.string.isRequired,
+    filterTextRegexp: PropTypes.any,
+    highlightTagsOnly: PropTypes.bool.isRequired,
+    replacementRegexp: PropTypes.any,
+    showCommas: PropTypes.bool,
+    showTags: PropTypes.bool.isRequired,
+  };
+
+  static defaultProps = {
+    showCommas: false,
+  };
+
   highlightText = string => string.replace(this.props.replacementRegexp, (group1, group2) =>
     !group2 ? `<span class="highlighted">${group1}</span>` : group2);
 
@@ -33,13 +47,45 @@ class SubjectCardsList extends Component {
               handleSubjectText={this.getText}
               handleTagText={this.getText}
             />;
+          }
+
+          /**
+           * If we're here it means we are filtering cards.
+           * Because of the iOS bug, we'll only highlight the tags.
+           */
+          else if (this.props.highlightTagsOnly) {
+            /**
+             * Only filter based on tags
+             */
+            const tagFlag = filterTextRegexp.test(commonProps.tags);
+
+            return tagFlag ?
+              <SubjectCard
+                handleText={this.highlightText}
+                {...commonProps}
+                handleCitationText={this.getText}
+                handleLawText={this.getText}
+                handleSubjectText={this.getText}
+                handleTagText={this.getTextHandler(tagFlag)}
+              /> :
+              null;
           } else {
+            /**
+             * TODO: This is not DRY! Fixme.
+             */
+            /**
+             * Filter based on all card text.
+             */
             const citFlag = filterTextRegexp.test(JSON.stringify(card.citationList));
             const lawFlag = filterTextRegexp.test(JSON.stringify(card.lawList));
             const subFlag = filterTextRegexp.test(card.subject);
             const tagFlag = filterTextRegexp.test(commonProps.tags);
 
-            return (citFlag || lawFlag || subFlag || tagFlag) ?
+            const shouldShow = (citFlag || lawFlag || subFlag || tagFlag);
+
+            debugger;
+
+            return shouldShow ?
               <SubjectCard
                 handleText={this.highlightText}
                 {...commonProps}
@@ -55,18 +101,5 @@ class SubjectCardsList extends Component {
     );
   }
 }
-
-SubjectCardsList.defaultProps = {
-  showCommas: false,
-};
-
-SubjectCardsList.propTypes = {
-  cardsList: PropTypes.array.isRequired,
-  filterText: PropTypes.string.isRequired,
-  filterTextRegexp: PropTypes.any,
-  replacementRegexp: PropTypes.any,
-  showTags: PropTypes.bool.isRequired,
-  showCommas: PropTypes.bool,
-};
 
 export default SubjectCardsList;

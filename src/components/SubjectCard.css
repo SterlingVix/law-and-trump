@@ -36,6 +36,9 @@
     font-size: 0.85em;
     padding-left: 0.66em;
     font-weight: 400;
+    min-height: 1.333em;
+    height: 1.5em;
+    max-height: 2em;
 }
 .tags * {
     margin: 0.15em 0;
@@ -48,12 +51,12 @@
 .listsContainer {
     display: -webkit-flex; display: flex;
     -webkit-flex-flow: row nowrap;
-    -moz-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     flex-basis: 50%;
     margin: 0;
     width: 100%;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
 }
 
 .citationColumn,
@@ -82,10 +85,10 @@
 @media all and (max-width: 567px) {
     .listsContainer {
         -webkit-flex-flow: column nowrap;
-        -moz-flex-flow: column nowrap;
-        -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
         flex-basis: 100%;
+        -moz-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
     }
     .citationColumn,
     .lawColumn {
