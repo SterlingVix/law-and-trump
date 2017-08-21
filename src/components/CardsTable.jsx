@@ -17,15 +17,39 @@ class CardsTable extends Component {
       showTags: data.config.showTags,
       highlightTagsOnly: data.config.highlightTagsOnly,
     };
+
+    this.diacritReplacements = [
+      { original: `'`, replacement: `(’|')` },
+      // { original: `"`, replacement: `("|“|”)` }, // currently unused
+    ];
   }
+
+  /**
+   * Replace non-keyboard characters with typable chars.
+   */
+  getSanitizedSearchText = text =>
+    text.replace(new RegExp(`${this.diacritReplacements[0].original}`), this.diacritReplacements[0].replacement);
+        // .replace(new RegExp(`${this.diacritReplacements[1].original}`), this.diacritReplacements[1].replacement);
+
+  getReplacementRegexp = (text) => {
+    // Replace curly quotes with straight quotes.
+    const sanitizedSearchText = this.getSanitizedSearchText(text);
+    return sanitizedSearchText ?
+      new RegExp(`(]\\(.*${sanitizedSearchText}.*?[)])|(${sanitizedSearchText})`, 'gi') :
+      null;
+  };
 
   updateFilter = (event) => {
     // console.debug('Should we pass an array of filtered text items, separating on spaces?');
     this.setState({
       filterText: event.target.value,
-      filterTextRegexp: new RegExp(event.target.value, 'i'),
+
+      filterTextRegexp: event.target.value ?
+        new RegExp(this.getSanitizedSearchText(event.target.value), 'i') :
+        new RegExp(event.target.value, 'i'),
+
       replacementRegexp: event.target.value.trim() ?
-        new RegExp(`(]\\(.*${event.target.value}.*?[)])|(${event.target.value})`, 'gi') :
+        this.getReplacementRegexp(event.target.value) :
         null,
     });
   };
