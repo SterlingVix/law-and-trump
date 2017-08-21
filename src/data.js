@@ -18,9 +18,9 @@ export default {
     tableTitleLeft: 'Trump’s words and actions',
     tableTitleRight: 'International laws violated',
     /**
-     * Last updated:
+     * Hack for iOS display bug: only highlight tags
      */
-    updated: 'March 20, 2017',
+    highlightTagsOnly: true,
   },
 
   /*************************************

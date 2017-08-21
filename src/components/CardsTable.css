@@ -4,14 +4,14 @@
     display: -webkit-flex; display: flex;
     flex-direction: column;
     -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
     justify-content: space-around;
     -webkit-align-content: space-around;
-    -moz-align-content: space-around;
-    -ms-align-content: space-around;
     align-content: space-around;
     min-width: 360px;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-align-content: space-around;
+    -ms-align-content: space-around;
 }
 
 /**
@@ -20,8 +20,6 @@
 .tableHeader {
     display: -webkit-flex; display: flex;
     -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     height: auto;
     text-transform: uppercase;
@@ -29,17 +27,19 @@
     margin: 0;
     font-size: 1.5em;
     -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
     align-items: center;
     -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
     justify-content: space-around;
     -webkit-align-content: space-around;
+    align-content: space-around;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     -moz-align-content: space-around;
     -ms-align-content: space-around;
-    align-content: space-around;
 }
 
 .textShadow {
@@ -79,10 +79,10 @@
     flex-basis: 100%;
     flex-wrap: nowrap;
     -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
     justify-content: space-around;
     font-size: 0.9em;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
 }
 
 .leftColumn,
