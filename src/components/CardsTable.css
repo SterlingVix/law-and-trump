@@ -62,10 +62,9 @@
  * Search Bar
  */
 .searchRow {
-    margin: 0.45em 0;
-    flex-grow: 0;
     width: 100%;
     max-width: calc(66% + 2em);
+    margin: 0.45em 0;
 }
 
 .filterInput {
@@ -118,17 +117,6 @@
  *    * @700: as-is
  *    * @699: change!
  */
-/* 700px width or larger */
-@media all and (min-width: 700px) {}
-
-/*!* 699px width or smaller *!*/
-@media all and (max-width: 699px) {
-    .searchRow {
-        max-width: 100%;
-        margin: 0.2em 2em;
-    }
-}
-
 /* 568px width or larger AND 699px or smaller */
 @media all and (min-width: 568px) and (max-width: 699px) {
     .cardsTable {
@@ -136,6 +124,9 @@
     }
     .tableTitleRow {
         font-size: 0.8em;
+    }
+    .searchRow {
+        margin: 0.45em 0.5em;
     }
 }
 
@@ -146,9 +137,13 @@
     }
     .tableTitleRow {
         font-size: 100%;
+        margin: 0;
+    }
+    .leftColumn {
+        width: 100%;
     }
     .searchRow {
-        margin: 0.2em 1em;
+        margin: 0.4em 0;
     }
     .rightColumn {
         display: none;

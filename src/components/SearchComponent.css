@@ -75,7 +75,7 @@ input.searchInput:focus {
 /* 568px width or larger AND 699px or smaller */
 @media all and (min-width: 568px) and (max-width: 699px) {
     .searchComponent {
-        height: 1.4em;
+        /*height: 1.4em;*/
     }
     .svgContainer {
         height: 20px;
@@ -86,7 +86,7 @@ input.searchInput:focus {
         max-width: 20px;
     }
     input.searchInput {
-        height: 20px;
+        /*height: 20px;*/
     }
 }
 

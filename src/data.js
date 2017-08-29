@@ -20,7 +20,7 @@ export default {
     /**
      * Hack for iOS display bug: only highlight tags
      */
-    highlightTagsOnly: true,
+    highlightTagsOnly: false,
   },
 
   /*************************************
