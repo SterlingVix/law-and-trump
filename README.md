@@ -21,20 +21,18 @@ When finished, please *make a pull request to master* and put the issue in the *
 
 This app is developed with Create React App -- instructions at https://github.com/facebookincubator/create-react-app.
 
-To install, just clone the repo and run `npm install`.
+To install, just clone the repo and run `yarn install`.
 
-Run the app with `npm start`.
+Run the app with `yarn start`.
 
-Build the optimized / deployable app with `npm run build`.
+Build the optimized / deployable app with `yarn run build`.
 
-Preview the deployable build by first installing `serve` globally: `npm install -g serve@^5.1.5`.
+Preview the deployable build by first installing `serve` globally: `yarn install -g serve@^5.1.5`.
 
-Then serve the built app with `npm run preview`.
+Then serve the built app with `yarn run preview`.
 
 Code style is ES2016+ with React. If you're not used to it, no worries, you'll pick it up fast. Ask me if you have any questions. :)
 
 ### Publishing the app
 
-First, install `gh-pages` globally: `npm install -g gh-pages`.
-
-Then run `npm run deploy`. That's it!
+Run `yarn run deploy`. That's it!
