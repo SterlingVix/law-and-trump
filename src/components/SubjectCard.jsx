@@ -31,17 +31,11 @@ class SubjectCard extends React.Component {
         <div className="cardHeaderContainer">
           <div className="cardTitleContainer">
             <Markdown {...opts} source={handleSubjectText(card.subject)}/>
-            {/*<Markdown {...opts}>*/}
-            {/*<span>{handleText(card.subject)}</span>*/}
-            {/*</Markdown>*/}
           </div>
 
           {showTags ?
             (<div className="tags">
               <Markdown {...opts} source={handleTagText(tags)}/>
-              {/*<Markdown {...opts}>*/}
-              {/*<span>{handleText(tags)}</span>*/}
-              {/*</Markdown>*/}
             </div>) :
             null}
         </div>

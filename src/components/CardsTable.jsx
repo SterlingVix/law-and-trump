@@ -98,6 +98,7 @@ class CardsTable extends Component {
           </div>
         </div>
 
+
         <SubjectCardsList
           cardsList={data.cardsList}
           filterText={this.state.filterText}

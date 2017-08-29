@@ -5,6 +5,7 @@
     text-align: right;
     width: 100%;
     display: -webkit-flex; display: flex;
+    /*display: -webkit-flex; display: flex; display: -webkit-box;*/
     -webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -webkit-justify-content: flex-start;
@@ -49,7 +50,7 @@
 }
 .icon {
     font-size: 0.5rem;
-    display: -webkit-flex; display: flex;
+    display: -webkit-flex; display: flex; display: -webkit-box;
     stroke-width: 0;
     fill: #6e6e6e;
 }
@@ -86,7 +87,6 @@ input.searchInput:focus {
     }
     input.searchInput {
         height: 20px;
-        padding: 4px;
     }
 }
 

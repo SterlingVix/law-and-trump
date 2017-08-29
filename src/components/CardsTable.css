@@ -1,7 +1,7 @@
 .cardsTable {
     max-width: 1280px;
     overflow-y: hidden;
-    display: -webkit-flex; display: flex;
+    display: -webkit-flex; display: flex; display: -webkit-box;
     flex-direction: column;
     -webkit-justify-content: space-around;
     justify-content: space-around;
@@ -18,9 +18,9 @@
  * Static blue header fixed to top of container
  */
 .tableHeader {
-    display: -webkit-flex; display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    display: -webkit-flex; display: flex; display: -webkit-box;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
     height: auto;
     text-transform: uppercase;
     padding: 0.45em 0;
@@ -52,7 +52,9 @@
 
 .searchRow,
 .tableTitleRow {
-    display: -webkit-flex; display: flex;
+    display: -webkit-flex; display: flex; display: -webkit-box;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
     flex-grow: 1;
 }
 
@@ -87,9 +89,9 @@
 
 .leftColumn,
 .rightColumn {
-    width: 100%;
+    width: 50%;
     text-align: center;
-    flex-basis: 100%;
+    flex-basis: 50%;
     margin: 0;
 }
 
