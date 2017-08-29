@@ -9,7 +9,7 @@
 
 .subjectCardContainer {
     /*position: relative;*/
-    /*display: -webkit-flex; display: flex;*/
+    /*display: -webkit-flex; display: flex; display: -webkit-box;*/
     display: block;
 }
 

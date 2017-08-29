@@ -5,6 +5,7 @@
     text-align: right;
     width: 100%;
     display: -webkit-flex; display: flex;
+    /*display: -webkit-flex; display: flex; display: -webkit-box;*/
     -webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -webkit-justify-content: flex-start;
@@ -49,7 +50,7 @@
 }
 .icon {
     font-size: 0.5rem;
-    display: -webkit-flex; display: flex;
+    display: -webkit-flex; display: flex; display: -webkit-box;
     stroke-width: 0;
     fill: #6e6e6e;
 }
@@ -74,7 +75,7 @@ input.searchInput:focus {
 /* 568px width or larger AND 699px or smaller */
 @media all and (min-width: 568px) and (max-width: 699px) {
     .searchComponent {
-        height: 1.4em;
+        /*height: 1.4em;*/
     }
     .svgContainer {
         height: 20px;
@@ -85,8 +86,7 @@ input.searchInput:focus {
         max-width: 20px;
     }
     input.searchInput {
-        height: 20px;
-        padding: 4px;
+        /*height: 20px;*/
     }
 }
 
